@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgreen_software_training=self.webpackChunkgreen_software_training||[]).push([[434],{8203:s=>{s.exports=JSON.parse('{"label":"region-global","permalink":"/tags/region-global","allTagsPath":"/tags","count":1,"items":[{"id":"speakers/asim-hussain","title":"Asim Hussain","description":"","permalink":"/speakers/asim-hussain"}]}')}}]);
