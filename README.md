@@ -1,10 +1,8 @@
-Follow the instructions in [CONFIGURE.md](CONFIGURE.md) to learn how to configure this template repository.
+# Speakers Bureau
 
-# PROJECT-TITLE
+The GSF Speakers Bureau is the one-stop shop for any and all speakers on the topic of green software. It is a comprehensive database featuring speakers from all continents, various regions and countries, able to present in local languages, wherever needed.
 
-TODO
-
-This is a project run through the [Community Working Group](https://grnsft.org/community-wg) in the [Green Software Foundation](https://greensoftware.foundation) and can be viewed through https://TODO.greensoftware.foundation
+This is a project run through the [Community Working Group](https://grnsft.org/community-wg) in the [Green Software Foundation](https://greensoftware.foundation) and can be viewed through https://speakers.greensoftware.foundation
 
 ## Copyright
 This project is copyrighted under [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/).

@@ -6,18 +6,18 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   // Change to Site title
-  title: "PROJECT-TITLE",
+  title: "Speakers",
   // Change to site description
-  tagline: "TODO",
+  tagline: "Green software speakers are now accessible on an easy-to-navigate platform.",
   // Change to site url
-  url: "https://TODO.greensoftware.foundation/",
+  url: "https://speakers.greensoftware.foundation/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "Green-Software-Foundation",
   // Change to GitHub repo name.
-  projectName: "TODO",
+  projectName: "speakers",
   deploymentBranch: "gh-pages",
   i18n: {
     defaultLocale: "en",
@@ -49,10 +49,10 @@ const config = {
     ({
       navbar: {
         // Change to project name
-        title: "TODO",
+        title: "Speakers",
         // Change to project logo
         logo: {
-          alt: "Green Software TODO Logo",
+          alt: "Green Software Logo",
           src: "img/logo.svg",
         },
         items: [
@@ -71,11 +71,11 @@ const config = {
             items: [
               {
                 label: "Github",
-                href: "https://github.com/Green-Software-Foundation/TODO/", // Change to project repo
+                href: "https://github.com/Green-Software-Foundation/speakers/", // Change to project repo
               },
               {
                 label: "Website",
-                href: "https://TODO.greensoftware.foundation",
+                href: "https://speakers.greensoftware.foundation",
               }              
             ],
           },
