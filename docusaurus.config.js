@@ -6,7 +6,7 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   // Change to Site title
-  title: "Speakers",
+  title: "Green Software Speakers",
   // Change to site description
   tagline: "Green software speakers are now accessible on an easy-to-navigate platform.",
   // Change to site url
@@ -34,7 +34,9 @@ const config = {
           routeBasePath: "/",
           // Change this to your repo.
           editUrl:
-            "https://github.com/Green-Software-Foundation/TODO/",
+            "https://github.com/Green-Software-Foundation/speakers/tree/main/",
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true
         },
         blog: false,
         theme: {
@@ -49,7 +51,7 @@ const config = {
     ({
       navbar: {
         // Change to project name
-        title: "Speakers",
+        title: "Speakers Bureau",
         // Change to project logo
         logo: {
           alt: "Green Software Logo",
