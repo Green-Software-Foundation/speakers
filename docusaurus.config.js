@@ -8,7 +8,8 @@ const config = {
   // Change to Site title
   title: "Green Software Speakers",
   // Change to site description
-  tagline: "Green software speakers are now accessible on an easy-to-navigate platform.",
+  tagline:
+    "Green software speakers are now accessible on an easy-to-navigate platform.",
   // Change to site url
   url: "https://speakers.greensoftware.foundation/",
   baseUrl: "/",
@@ -36,7 +37,7 @@ const config = {
           editUrl:
             "https://github.com/Green-Software-Foundation/speakers/tree/main/",
           showLastUpdateAuthor: true,
-          showLastUpdateTime: true
+          showLastUpdateTime: true,
         },
         blog: false,
         theme: {
@@ -87,7 +88,7 @@ const config = {
               {
                 label: "Website",
                 href: "https://speakers.greensoftware.foundation",
-              }              
+              },
             ],
           },
           {
@@ -117,7 +118,7 @@ const config = {
               {
                 label: "Linkedin",
                 href: "https://www.linkedin.com/company/green-software-foundation/",
-              }              
+              },
             ],
           },
         ],
@@ -131,6 +132,19 @@ const config = {
         defaultMode: "light",
       },
     }),
+
+  plugins: [
+    [
+      "@docusaurus/plugin-ideal-image",
+      {
+        quality: 70,
+        max: 1030, // max resized image's size.
+        min: 640, // min resized image's size. if original is lower, use that size.
+        steps: 2, // the max number of images generated between min and max (inclusive)
+        disableInDev: false,
+      },
+    ],
+  ],
 };
 
 module.exports = config;
