@@ -115,6 +115,8 @@ export default function Speaker({
         <p>{underrepresentedMinority}</p>
         <h2>Want to talk about</h2>
         <p>{talkAbout}</p>
+        <h2>Other notes</h2>
+        <p>{notes}</p>
       </div>
       <div className={styles.speaker}>
         <div className={styles.avatar}>
