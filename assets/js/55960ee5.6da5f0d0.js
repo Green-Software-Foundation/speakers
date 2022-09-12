@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgreen_software_training=self.webpackChunkgreen_software_training||[]).push([[121],{8070:e=>{e.exports=JSON.parse('[{"label":"years-experience-5-plus","permalink":"/tags/years-experience-5-plus","count":1},{"label":"region-uk","permalink":"/tags/region-uk","count":1},{"label":"region-global","permalink":"/tags/region-global","count":1}]')}}]);
