@@ -1,0 +1,77 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 230px;
+  gap: 44px;
+}
+.speaker {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+  background: var(--ifm-menu-color-background-active);
+  position: sticky;
+  align-self: start;
+  right: 0;
+  top: 80px;
+  padding: 40px 0;
+  border-radius: 64px;
+}
+.avatar {
+  flex-shrink: 0;
+}
+.avatar img {
+  border-radius: 40px;
+  width: 150px;
+  height: 150px;
+}
+.pronouns {
+  font-size: 18px;
+  margin-top: -8px;
+  display: block;
+}
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--ifm-color-primary);
+  display: block;
+}
+.role {
+  font-size: 16px;
+  color: var(--ifm-color-content);
+  display: block;
+}
+.company {
+  font-size: 14px;
+  color: var(--ifm-color-emphasis-700);
+  display: block;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+.language {
+  background: var(--ifm-color-emphasis-200);
+  margin-right: 8px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* media query for 768px */
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .speaker {
+    width: 100%;
+    position: static;
+    padding: 40px 0;
+    order: 1;
+  }
+  .content {
+    order: 2;
+  }
+}
