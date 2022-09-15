@@ -101,7 +101,7 @@ export default function Speaker({
         </ul>
         <h2>Willing to provide coaching and advice to new speakers</h2>
         <p>{coachNewSpeakers}</p>
-        <h2>languages</h2>
+        <h2>Languages</h2>
         <p>
           {languages.map((language) => (
             <span key={language} className={styles.language}>
