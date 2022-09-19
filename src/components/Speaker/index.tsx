@@ -57,66 +57,122 @@ export default function Speaker({
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <h2>Bio</h2>
-        <p>{shortBiography}</p>
-        <h2>Travel</h2>
-        <p>{travel}</p>
-        <h2>Pay & Expenses</h2>
-        <p>{payAndExpenses}</p>
-        <h2>Areas of Interest</h2>
-        <p>{areaOfInterest}</p>
-        <h2>Speaker Experience</h2>
-        <p>{speakerExperience}</p>
-        <h2>Number of past speaking engagements</h2>
-        <p>{noPastSpeakingEngagements}</p>
-        <h2>Pervious Talks</h2>
-        <ul>
-          {previousTalks.map((talk) => {
-            const isYoutubeLink = talk.link.match(
-              /(?:https?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((?:\w|-){11})(?![\w-])/
-            );
+        {shortBiography && (
+          <>
+            <h2>Bio</h2>
+            <p>{shortBiography}</p>
+          </>
+        )}
+        {travel && (
+          <>
+            <h2>Travel</h2>
+            <p>{travel}</p>
+          </>
+        )}
+        {payAndExpenses && (
+          <>
+            <h2>Pay and Expenses</h2>
+            <p>{payAndExpenses}</p>
+          </>
+        )}
+        {areaOfInterest && (
+          <>
+            <h2>Area of Interest</h2>
+            <p>{areaOfInterest}</p>
+          </>
+        )}
+        {speakerExperience && (
+          <>
+            <h2>Speaker Experience</h2>
+            <p>{speakerExperience}</p>
+          </>
+        )}
+        {noPastSpeakingEngagements && (
+          <>
+            <h2>Number of past speaking engagements</h2>
+            <p>{noPastSpeakingEngagements}</p>
+          </>
+        )}
+        {previousTalks && (
+          <>
+            <h2>Pervious Talks</h2>
+            <ul>
+              {previousTalks.map((talk) => {
+                const isYoutubeLink = talk.link.match(
+                  /(?:https?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((?:\w|-){11})(?![\w-])/
+                );
 
-            // extract the video id from the url
-            const videoId = isYoutubeLink ? isYoutubeLink[1] : null;
-            return (
-              <li key={talk.link}>
-                <a href={talk.link} target="_blank" rel="noopener noreferrer">
-                  {talk.title}
-                </a>
-                {videoId && (
-                  <div>
-                    <iframe
-                      width="420"
-                      height="215"
-                      src={`https://www.youtube.com/embed/${videoId}`}
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    />
-                  </div>
-                )}
-              </li>
-            );
-          })}
-        </ul>
-        <h2>Willing to provide coaching and advice to new speakers</h2>
-        <p>{coachNewSpeakers}</p>
-        <h2>Languages</h2>
-        <p>
-          {languages.map((language) => (
-            <span key={language} className={styles.language}>
-              {language}
-            </span>
-          ))}
-        </p>
-        <h2>Is in a MAPA (Most affected people and places) </h2>
-        <p>{MAPA}</p>
-        <h2>Is part of an underrepresented minority</h2>
-        <p>{underrepresentedMinority}</p>
-        <h2>Want to talk about</h2>
-        <p>{talkAbout}</p>
-        <h2>Other notes</h2>
-        <p>{notes}</p>
+                // extract the video id from the url
+                const videoId = isYoutubeLink ? isYoutubeLink[1] : null;
+                return (
+                  <li key={talk.link}>
+                    <a
+                      href={talk.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {talk.title}
+                    </a>
+                    {videoId && (
+                      <div>
+                        <iframe
+                          width="420"
+                          height="215"
+                          src={`https://www.youtube.com/embed/${videoId}`}
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        />
+                      </div>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          </>
+        )}
+        {coachNewSpeakers && (
+          <>
+            <h2>Willing to provide coaching and advice to new speakers</h2>
+            <p>{coachNewSpeakers}</p>
+          </>
+        )}
+        {languages && (
+          <>
+            <h2>Languages</h2>
+            <p>
+              {languages.map((language) => (
+                <span key={language} className={styles.language}>
+                  {language}
+                </span>
+              ))}
+            </p>
+          </>
+        )}
+        {MAPA && (
+          <>
+            <h2>Is in a MAPA (Most affected people and places) </h2>
+            <p>{MAPA}</p>
+          </>
+        )}
+        {underrepresentedMinority && (
+          <>
+            <h2>Is part of an underrepresented minority</h2>
+            <p>{underrepresentedMinority}</p>
+          </>
+        )}
+        {talkAbout && (
+          <>
+            <h2>Want to talk about</h2>
+            <p>{talkAbout}</p>
+          </>
+        )}
+        {notes && (
+          <>
+            <h2>Other notes</h2>
+            <p>{notes}</p>
+          </>
+        )}
       </div>
       <div className={styles.speaker}>
         <div className={styles.avatar}>
