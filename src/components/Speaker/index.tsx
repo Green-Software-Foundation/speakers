@@ -105,6 +105,8 @@ export default function Speaker({
 
                 // extract the video id from the url
                 const videoId = isYoutubeLink ? isYoutubeLink[1] : null;
+                // extract video start time from the url
+                const startTime = talk.link.match(/t=(\d+)/);
                 return (
                   <li key={talk.link}>
                     <a
@@ -119,7 +121,9 @@ export default function Speaker({
                         <iframe
                           width="420"
                           height="215"
-                          src={`https://www.youtube.com/embed/${videoId}`}
+                          src={`https://www.youtube.com/embed/${videoId}${
+                            startTime ? `?start=${startTime[1]}` : ""
+                          }`}
                           frameBorder="0"
                           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                           allowFullScreen
