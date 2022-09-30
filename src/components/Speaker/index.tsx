@@ -96,7 +96,7 @@ export default function Speaker({
         )}
         {previousTalks && (
           <>
-            <h2>Pervious Talks</h2>
+            <h2>Previous Talks</h2>
             <ul>
               {previousTalks.map((talk) => {
                 const isYoutubeLink = talk.link.match(
