@@ -39,11 +39,13 @@
   font-size: 16px;
   color: var(--ifm-color-content);
   display: block;
+  padding: 15px;
 }
 .company {
   font-size: 14px;
   color: var(--ifm-color-emphasis-700);
   display: block;
+  padding: 15px;
 }
 .social {
   display: flex;
