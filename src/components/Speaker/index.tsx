@@ -99,6 +99,10 @@ export default function Speaker({
             <h2>Previous Talks</h2>
             <ul>
               {previousTalks.map((talk) => {
+                if (!talk.link) {
+                  return <li>{talk.title}</li>;
+                }
+
                 const isYoutubeLink = talk.link.match(
                   /(?:https?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((?:\w|-){11})(?![\w-])/
                 );
@@ -108,7 +112,7 @@ export default function Speaker({
                 // extract video start time from the url
                 const startTime = talk.link.match(/t=(\d+)/);
                 return (
-                  <li key={talk.link}>
+                  <li key={talk.title}>
                     <a
                       href={talk.link}
                       target="_blank"
