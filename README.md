@@ -1,50 +1,49 @@
-# Speakers Bureau
+# Welcome to [Astro](https://astro.build)
 
-The GSF Speakers Bureau is the one-stop shop for any and all speakers on the topic of green software. It is a comprehensive database featuring speakers from all continents, various regions and countries, able to present in local languages, wherever needed.
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
 
-This is a project run through the [Community Working Group](https://grnsft.org/community-wg) in the [Green Software Foundation](https://greensoftware.foundation) and can be viewed through https://speakers.greensoftware.foundation
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## Copyright
-This project is copyrighted under [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/).
+![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
 
-## Patent
-No Patent License.
 
-## License
-This project is licensed under the MIT License - see the [LICENCE](LICENCE) file for details.
+## 🚀 Project Structure
 
-## Contributing
+Inside of your Astro project, you'll see the following folders and files:
 
-This project is open source and welcomes public contribution via issues, discussions and pull requests.
+```
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   └── Card.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-Members of the Green Software Foundation also meet and discuss aspects of this project either in-person or virtual via email or video.
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-Instructions for how to contribute to this project can be found in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-## Editing Content
+Any static assets, like images, can be placed in the `public/` directory.
 
-This project is a static website based on the project https://docusaurus.io, you can find more information about docusaurus here: https://docusaurus.io/docs
+## 🧞 Commands
 
-The `docs` folder contains all of the material in this project, editing any file there in the `main` branch will update the website. If you are only interested in editing content on the website then you should not need to leave the `docs` folder.
+All commands are run from the root of the project, from a terminal:
 
-The documentation files use a format called markdown and they end in `.md` which supports certain basic styling features like so: https://docusaurus.io/docs/markdown-features
+| Command                | Action                                             |
+| :--------------------- | :------------------------------------------------- |
+| `npm install`          | Installs dependencies                              |
+| `npm run dev`          | Starts local dev server at `localhost:3000`        |
+| `npm run build`        | Build your production site to `./dist/`            |
+| `npm run preview`      | Preview your build locally, before deploying       |
+| `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
+| `npm run astro --help` | Get help using the Astro CLI                       |
 
-## Developing Locally
+## 👀 Want to learn more?
 
-To edit this project on your local machine and see the output as it would be rendered on the website you will need `node` at least version 14 installed.
-
-We also recommend to use `yarn` as the package management solution as the deployment scripts use `yarn` not `npm`.
-
-`npm -g install yarn`
-
-`yarn install`
-
-Then to run the project locally type
-
-`yarn run docusaurus start`
-
-and visit https://localhost:3000 in your favorite browser or whatever the command above prints out in the terminal.
-
-## Site Configuration
-
-To edit attributes of the website, customize the menu, sidebar and footer for example, you will need to edit the `docusaurus.config.js` file, more information about the options that are present there can be found here: https://docusaurus.io/docs/api/docusaurus-config
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
