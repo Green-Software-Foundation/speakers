@@ -1,7 +1,396 @@
 ---
+import type { MarkdownLayoutProps } from "astro";
 import Layout from "./Layout.astro";
+
+type Props = MarkdownLayoutProps<{
+  name: string;
+  pronoun: string;
+  position: string;
+  company: string;
+  location: string;
+  languages: string[];
+  social: {
+    twitter?: string;
+    linkedin: string;
+    github?: string;
+    website?: string;
+  };
+  bio: string;
+  experience: string[];
+  engagements: string;
+  topics: string[];
+  talks: {
+    youtube: {
+      title: string;
+      url: string;
+    }[];
+    others: {
+      title: string;
+      description?: string;
+      url: string;
+    }[];
+  };
+  travel: {
+    locations: string;
+    payAndExpenses: string;
+    notes: string;
+  };
+  isMAPA: boolean;
+  isMinority: boolean;
+  notes: string;
+}>;
+
+const { frontmatter } = Astro.props;
+const {
+  name,
+  pronoun,
+  position,
+  company,
+  location,
+  languages,
+  social: { twitter, linkedin, github, website },
+  bio,
+  experience,
+  engagements,
+  topics,
+  talks: { youtube, others },
+  travel: { locations: travelLocations, payAndExpenses, notes: travelNotes },
+  isMAPA,
+  isMinority,
+  notes,
+} = frontmatter;
 ---
 
 <Layout>
-  <h1>My page</h1>
+  <a href="/">back to speakers catalog</a>
+  <div class="main-card">
+    <img class="avatar" src={`https://github.com/${github}.png`} alt={name} />
+    <div class="card-content">
+      <h1 class="name">
+        {name}
+        <small class="pronoun">({pronoun})</small>
+      </h1>
+
+      <p class="position">{position}</p>
+      <p class="company">{company}</p>
+      <p class="location">{location}</p>
+      <div class="languages-wrapper">
+        <span>Speaks:</span>
+        <ul class="items-list">
+          {languages.map((language) => <li>{language}</li>)}
+        </ul>
+      </div>
+    </div>
+    <div class="seprator"></div>
+    <div class="card-social">
+      <p>Find me on</p>
+      <div class="socials">
+        {
+          github && (
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={` https://github.com/${github}`}
+            >
+              <img src="/images/github.svg" alt="Github" />
+            </a>
+          )
+        }
+        {
+          twitter && (
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={`https://twitter.com/${twitter}`}
+            >
+              <img src="/images/twitter.svg" alt="Twitter" />
+            </a>
+          )
+        }
+        {
+          linkedin && (
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={`https://linkedin.com/in/${linkedin}`}
+            >
+              <img src="/images/linkedin.svg" alt="Linkedin" />
+            </a>
+          )
+        }
+
+        {
+          website && (
+            <a target="_blank" rel="noopener noreferrer" href={website}>
+              <img src="/images/globe.svg" alt="Website" />
+            </a>
+          )
+        }
+      </div>
+      <a href="#" class="button primary">Contact {name.split(" ")[0]}</a>
+    </div>
+  </div>
+  <div class="content">
+    <section>
+      <h2>Biography</h2>
+      <p>{bio}</p>
+    </section>
+    <section>
+      <h2>Speaking</h2>
+      <div class="row">
+        <div class="col">
+          <h3>Experience</h3>
+          <ul class="items-list">
+            {experience.map((exp) => <li>{exp}</li>)}
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Engagements</h3>
+          <p>{engagements}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h3>Likes to talk about</h3>
+          <ul>
+            {topics.map((topic) => <li>{topic}</li>)}
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h3>Previous Talks</h3>
+          <div class="row">
+            <div class="col">
+              <h4>Youtube</h4>
+              <ul class="youtube-wrapper">
+                {
+                  youtube.map((talk) => {
+                    const isYoutubeLink = talk.url.match(
+                      /(?:https?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((?:\w|-){11})(?![\w-])/
+                    );
+                    const videoId = isYoutubeLink ? isYoutubeLink[1] : null;
+                    const startTime = talk.url.match(/t=(\d+)/);
+
+                    return (
+                      <li>
+                        <iframe
+                          width="100%"
+                          height="auto"
+                          src={`https://www.youtube.com/embed/${videoId}${
+                            startTime ? `?start=${startTime[1]}` : ""
+                          }`}
+                          title={talk.title}
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        />
+                      </li>
+                    );
+                  })
+                }
+              </ul>
+            </div>
+            <div class="col">
+              <h4>Others</h4>
+              <ul class="others-wrapper">
+                {
+                  others.map((talk) => (
+                    <li>
+                      <a href={talk.url}>
+                        {talk.title}
+                        {talk.description && <p>{talk.description}</p>}
+                      </a>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Travel</h2>
+      <div class="row">
+        <div class="col">
+          <h3>Locations</h3>
+          <p>{travelLocations}</p>
+        </div>
+        <div class="col">
+          <h3>Pay and Expenses</h3>
+          <p>{payAndExpenses}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h3>Notes</h3>
+          <p>{travelNotes}</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Additional Information</h2>
+      <div class="row">
+        <div class="col">
+          <h3>Is MAPA</h3>
+          <p>{isMAPA ? "Yes" : "No"}</p>
+        </div>
+        <div class="col">
+          <h3>Is Minority</h3>
+          <p>{isMinority ? "Yes" : "No"}</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Other notes</h2>
+      <p>{notes}</p>
+    </section>
+  </div>
 </Layout>
+<style>
+  .main-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    background: #ffffff;
+    box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24),
+      0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+    border-radius: 0.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .avatar {
+    width: 156px;
+    height: 156px;
+    border-radius: 50%;
+  }
+  .name {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 0;
+  }
+  .pronoun {
+    font-size: 0.875rem;
+    font-style: italic;
+    font-weight: 400;
+  }
+  .position {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--grey-darker);
+  }
+  .company {
+    font-size: 0.875rem;
+    color: var(--grey-darker);
+    margin-bottom: 0.5rem;
+  }
+  .location {
+    color: var(--black);
+    margin-bottom: 0.75rem;
+  }
+  .languages-wrapper > span {
+    font-size: 0.875rem;
+    color: var(--black);
+  }
+  .items-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0;
+    list-style: none;
+  }
+  .items-list li {
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: var(--grey);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    color: #000;
+  }
+  .seprator {
+    width: 100%;
+    height: 1px;
+    background: var(--grey);
+    margin: 1rem 0;
+  }
+  .card-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .card-social p {
+    color: var(--grey-darker);
+  }
+  .card-social .socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .socials img {
+    height: 24px;
+    width: auto;
+  }
+  .content section {
+    margin-bottom: 2rem;
+    color: var(--grey-darker);
+  }
+  .content h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+  }
+  .content h3 {
+    color: var(--primary-darker);
+    margin-bottom: 0.75rem;
+  }
+  .content h4 {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  .content .row {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .content .row:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  .youtube-wrapper {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .others-wrapper {
+    color: var(--black);
+    list-style: none;
+    padding: 0;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .others-wrapper li {
+    padding: 1.5rem;
+    background: #ffffff;
+    box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24),
+      0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+    margin-bottom: 0.5rem;
+  }
+  .others-wrapper p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: var(--grey-darker);
+  }
+</style>

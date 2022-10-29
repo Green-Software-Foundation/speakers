@@ -13,4 +13,17 @@ type Speaker = {
   };
 };
 
-export type { Speaker };
+type SpeakerFull = {
+  location: string;
+  name: string;
+  position: string;
+  company: string;
+  social: {
+    twitter?: string;
+    github: string;
+    linkedin?: string;
+    website?: string;
+  };
+};
+
+export type { Speaker, SpeakerFull };
