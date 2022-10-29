@@ -262,6 +262,34 @@ import "@fontsource/nunito-sans/900.css";
         color: inherit;
         text-decoration: none;
       }
+      .has-tooltip {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+      }
+      [data-tooltip] {
+        position: relative;
+      }
+      [data-tooltip]:before {
+        content: attr(data-tooltip);
+        position: absolute;
+        top: 110%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0.5rem 1rem;
+        background-color: var(--primary);
+        color: #fff;
+        border-radius: 0.25rem;
+        font-size: 0.75rem;
+        white-space: nowrap;
+        transition: opacity 0.2s ease-in-out;
+        opacity: 0;
+      }
+      [data-tooltip]:hover:before {
+        visibility: visible;
+        opacity: 1;
+      }
+
       .button {
         border: none;
         border-radius: 8px;

@@ -62,193 +62,282 @@ const {
 ---
 
 <Layout>
-  <a href="/">back to speakers catalog</a>
-  <div class="main-card">
-    <img class="avatar" src={`https://github.com/${github}.png`} alt={name} />
-    <div class="card-content">
-      <h1 class="name">
-        {name}
-        <small class="pronoun">({pronoun})</small>
-      </h1>
+  <div class="wrapper">
+    <a class="back-link" href="/"
+      ><span
+        ><svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19 12H5"
+            stroke="#EDEDED"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+          <path
+            d="M19 12H5"
+            stroke="black"
+            stroke-opacity="0.5"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+          <path
+            d="M12 19L5 12L12 5"
+            stroke="#EDEDED"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+          <path
+            d="M12 19L5 12L12 5"
+            stroke="black"
+            stroke-opacity="0.5"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+      </span> Speakers Catalog</a
+    >
+    <div class="main-card">
+      <img class="avatar" src={`https://github.com/${github}.png`} alt={name} />
+      <div class="card-content">
+        <h1 class="name">
+          {name}
+          <small class="pronoun">({pronoun})</small>
+        </h1>
 
-      <p class="position">{position}</p>
-      <p class="company">{company}</p>
-      <p class="location">{location}</p>
-      <div class="languages-wrapper">
-        <span>Speaks:</span>
-        <ul class="items-list">
-          {languages.map((language) => <li>{language}</li>)}
-        </ul>
-      </div>
-    </div>
-    <div class="seprator"></div>
-    <div class="card-social">
-      <p>Find me on</p>
-      <div class="socials">
-        {
-          github && (
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={` https://github.com/${github}`}
-            >
-              <img src="/images/github.svg" alt="Github" />
-            </a>
-          )
-        }
-        {
-          twitter && (
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={`https://twitter.com/${twitter}`}
-            >
-              <img src="/images/twitter.svg" alt="Twitter" />
-            </a>
-          )
-        }
-        {
-          linkedin && (
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={`https://linkedin.com/in/${linkedin}`}
-            >
-              <img src="/images/linkedin.svg" alt="Linkedin" />
-            </a>
-          )
-        }
-
-        {
-          website && (
-            <a target="_blank" rel="noopener noreferrer" href={website}>
-              <img src="/images/globe.svg" alt="Website" />
-            </a>
-          )
-        }
-      </div>
-      <a href="#" class="button primary">Contact {name.split(" ")[0]}</a>
-    </div>
-  </div>
-  <div class="content">
-    <section>
-      <h2>Biography</h2>
-      <p>{bio}</p>
-    </section>
-    <section>
-      <h2>Speaking</h2>
-      <div class="row">
-        <div class="col">
-          <h3>Experience</h3>
+        <p class="position">{position}</p>
+        <p class="company">{company}</p>
+        <p class="location">{location}</p>
+        <div class="languages-wrapper">
+          <span>Speaks:</span>
           <ul class="items-list">
-            {experience.map((exp) => <li>{exp}</li>)}
-          </ul>
-        </div>
-        <div class="col">
-          <h3>Engagements</h3>
-          <p>{engagements}</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <h3>Likes to talk about</h3>
-          <ul>
-            {topics.map((topic) => <li>{topic}</li>)}
+            {languages.map((language) => <li>{language}</li>)}
           </ul>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          <h3>Previous Talks</h3>
-          <div class="row">
-            <div class="col">
-              <h4>Youtube</h4>
-              <ul class="youtube-wrapper">
-                {
-                  youtube.map((talk) => {
-                    const isYoutubeLink = talk.url.match(
-                      /(?:https?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((?:\w|-){11})(?![\w-])/
-                    );
-                    const videoId = isYoutubeLink ? isYoutubeLink[1] : null;
-                    const startTime = talk.url.match(/t=(\d+)/);
+      <div class="seprator"></div>
+      <div class="card-social">
+        <p>Find me on</p>
+        <div class="socials">
+          {
+            github && (
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={` https://github.com/${github}`}
+              >
+                <img src="/images/github.svg" alt="Github" />
+              </a>
+            )
+          }
+          {
+            twitter && (
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={`https://twitter.com/${twitter}`}
+              >
+                <img src="/images/twitter.svg" alt="Twitter" />
+              </a>
+            )
+          }
+          {
+            linkedin && (
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={`https://linkedin.com/in/${linkedin}`}
+              >
+                <img src="/images/linkedin.svg" alt="Linkedin" />
+              </a>
+            )
+          }
 
-                    return (
+          {
+            website && (
+              <a target="_blank" rel="noopener noreferrer" href={website}>
+                <img src="/images/globe.svg" alt="Website" />
+              </a>
+            )
+          }
+        </div>
+        <a href="#" class="button primary">Contact {name.split(" ")[0]}</a>
+      </div>
+    </div>
+    <div class="content">
+      <section>
+        <h2>Biography</h2>
+        <p>{bio}</p>
+      </section>
+      <section>
+        <h2>Speaking</h2>
+        <div class="row col-2">
+          <div>
+            <h3>Experience</h3>
+            <ul class="items-list">
+              {experience.map((exp) => <li>{exp}</li>)}
+            </ul>
+          </div>
+          <div>
+            <h3>Engagements</h3>
+            <p>{engagements}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <h3>Likes to talk about</h3>
+            <ul>
+              {topics.map((topic) => <li>{topic}</li>)}
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <h3>Previous Talks</h3>
+            <div>
+              <div>
+                <h4>Youtube</h4>
+                <ul class="youtube-wrapper">
+                  {
+                    youtube.map((talk) => {
+                      const isYoutubeLink = talk.url.match(
+                        /(?:https?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((?:\w|-){11})(?![\w-])/
+                      );
+                      const videoId = isYoutubeLink ? isYoutubeLink[1] : null;
+                      const startTime = talk.url.match(/t=(\d+)/);
+
+                      return (
+                        <li>
+                          <iframe
+                            src={`https://www.youtube.com/embed/${videoId}${
+                              startTime ? `?start=${startTime[1]}` : ""
+                            }`}
+                            title={talk.title}
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                          />
+                        </li>
+                      );
+                    })
+                  }
+                </ul>
+              </div>
+              <div>
+                <h4>Others</h4>
+                <ul class="others-wrapper">
+                  {
+                    others.map((talk) => (
                       <li>
-                        <iframe
-                          width="100%"
-                          height="auto"
-                          src={`https://www.youtube.com/embed/${videoId}${
-                            startTime ? `?start=${startTime[1]}` : ""
-                          }`}
-                          title={talk.title}
-                          frameborder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowfullscreen
-                        />
+                        <a href={talk.url}>
+                          {talk.title}
+                          {talk.description && <p>{talk.description}</p>}
+                        </a>
                       </li>
-                    );
-                  })
-                }
-              </ul>
-            </div>
-            <div class="col">
-              <h4>Others</h4>
-              <ul class="others-wrapper">
-                {
-                  others.map((talk) => (
-                    <li>
-                      <a href={talk.url}>
-                        {talk.title}
-                        {talk.description && <p>{talk.description}</p>}
-                      </a>
-                    </li>
-                  ))
-                }
-              </ul>
+                    ))
+                  }
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section>
-      <h2>Travel</h2>
-      <div class="row">
-        <div class="col">
-          <h3>Locations</h3>
-          <p>{travelLocations}</p>
+      </section>
+      <section>
+        <h2>Travel</h2>
+        <div class="row col-2">
+          <div>
+            <h3>Locations</h3>
+            <p>{travelLocations}</p>
+          </div>
+          <div>
+            <h3>Pay and Expenses</h3>
+            <p>{payAndExpenses}</p>
+          </div>
         </div>
-        <div class="col">
-          <h3>Pay and Expenses</h3>
-          <p>{payAndExpenses}</p>
+        <div class="row">
+          <div>
+            <h3>Notes</h3>
+            <p>{travelNotes}</p>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <h3>Notes</h3>
-          <p>{travelNotes}</p>
+      </section>
+      <section>
+        <h2>Additional Information</h2>
+        <div class="row col-2">
+          <div>
+            <h3 class="has-tooltip">
+              In a MAPA <span data-tooltip="Most affected people and places"
+                ><svg
+                  width="14"
+                  height="15"
+                  viewBox="0 0 14 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7 2.19949C3.83691 2.19949 1.27273 4.76367 1.27273 7.92676C1.27273 11.0898 3.83691 13.654 7 13.654C10.1631 13.654 12.7273 11.0898 12.7273 7.92676C12.7273 4.76367 10.1631 2.19949 7 2.19949ZM0 7.92676C0 4.06076 3.13401 0.926758 7 0.926758C10.866 0.926758 14 4.06076 14 7.92676C14 11.7928 10.866 14.9268 7 14.9268C3.13401 14.9268 0 11.7928 0 7.92676Z"
+                    fill="#006D69"></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7 2.19949C3.83691 2.19949 1.27273 4.76367 1.27273 7.92676C1.27273 11.0898 3.83691 13.654 7 13.654C10.1631 13.654 12.7273 11.0898 12.7273 7.92676C12.7273 4.76367 10.1631 2.19949 7 2.19949ZM0 7.92676C0 4.06076 3.13401 0.926758 7 0.926758C10.866 0.926758 14 4.06076 14 7.92676C14 11.7928 10.866 14.9268 7 14.9268C3.13401 14.9268 0 11.7928 0 7.92676Z"
+                    fill="white"
+                    fill-opacity="0.5"></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.99989 7.29053C7.35134 7.29053 7.63625 7.57544 7.63625 7.92689V10.4723C7.63625 10.8238 7.35134 11.1087 6.99989 11.1087C6.64844 11.1087 6.36353 10.8238 6.36353 10.4723V7.92689C6.36353 7.57544 6.64844 7.29053 6.99989 7.29053Z"
+                    fill="#006D69"></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.99989 7.29053C7.35134 7.29053 7.63625 7.57544 7.63625 7.92689V10.4723C7.63625 10.8238 7.35134 11.1087 6.99989 11.1087C6.64844 11.1087 6.36353 10.8238 6.36353 10.4723V7.92689C6.36353 7.57544 6.64844 7.29053 6.99989 7.29053Z"
+                    fill="white"
+                    fill-opacity="0.5"></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.36353 5.38148C6.36353 5.03003 6.64844 4.74512 6.99989 4.74512H7.00625C7.35771 4.74512 7.64262 5.03003 7.64262 5.38148C7.64262 5.73293 7.35771 6.01784 7.00625 6.01784H6.99989C6.64844 6.01784 6.36353 5.73293 6.36353 5.38148Z"
+                    fill="#006D69"></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.36353 5.38148C6.36353 5.03003 6.64844 4.74512 6.99989 4.74512H7.00625C7.35771 4.74512 7.64262 5.03003 7.64262 5.38148C7.64262 5.73293 7.35771 6.01784 7.00625 6.01784H6.99989C6.64844 6.01784 6.36353 5.73293 6.36353 5.38148Z"
+                    fill="white"
+                    fill-opacity="0.5"></path>
+                </svg>
+              </span>
+            </h3>
+            <p>{isMAPA ? "Yes" : "No"}</p>
+          </div>
+          <div>
+            <h3>Underrepresented minority</h3>
+            <p>{isMinority ? "Yes" : "No"}</p>
+          </div>
         </div>
-      </div>
-    </section>
-    <section>
-      <h2>Additional Information</h2>
-      <div class="row">
-        <div class="col">
-          <h3>Is MAPA</h3>
-          <p>{isMAPA ? "Yes" : "No"}</p>
-        </div>
-        <div class="col">
-          <h3>Is Minority</h3>
-          <p>{isMinority ? "Yes" : "No"}</p>
-        </div>
-      </div>
-    </section>
-    <section>
-      <h2>Other notes</h2>
-      <p>{notes}</p>
-    </section>
+      </section>
+      <section>
+        <h2>Other notes</h2>
+        <p>{notes}</p>
+      </section>
+    </div>
   </div>
 </Layout>
 <style>
+  .back-link {
+    display: flex;
+    align-items: center;
+    color: var(--grey-darker);
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+    font-weight: bold;
+  }
   .main-card {
     display: flex;
     flex-direction: column;
@@ -370,6 +459,11 @@ const {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .youtube-wrapper iframe {
+    width: 100%;
+    height: 183px;
   }
   .others-wrapper {
     color: var(--black);
@@ -386,11 +480,47 @@ const {
     box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24),
       0px 3px 8px -1px rgba(50, 50, 71, 0.05);
     margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
   }
   .others-wrapper p {
     font-size: 0.875rem;
     font-weight: 400;
     margin-bottom: 0;
     color: var(--grey-darker);
+  }
+  @media (min-width: 768px) {
+    .wrapper {
+      max-width: 56rem;
+      margin: auto;
+    }
+    .main-card {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 2rem 3.5rem;
+    }
+    .card-content {
+      width: 300px;
+    }
+    .seprator {
+      width: 1px;
+      height: 100%;
+    }
+    .content .row.col-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+    }
+    .youtube-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      gap: 1rem;
+    }
+    .youtube-wrapper iframe {
+      height: 250px;
+    }
+    .others-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
   }
 </style>
