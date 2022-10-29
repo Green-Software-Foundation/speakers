@@ -11,6 +11,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^1.5.3"
+    "@astrojs/react": "^1.2.1",
+    "@fontsource/nunito-sans": "^4.5.10",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "astro": "^1.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
