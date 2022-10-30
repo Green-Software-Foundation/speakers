@@ -16,28 +16,29 @@ type Props = MarkdownLayoutProps<{
     website?: string;
   };
   bio: string;
-  experience: string[];
-  engagements: string;
-  topics: string[];
+  experience?: string[];
+  engagements?: string;
+  topics?: string[];
   talks: {
-    youtube: {
+    youtube?: {
       title: string;
       url: string;
     }[];
-    others: {
+    others?: {
       title: string;
       description?: string;
       url: string;
     }[];
   };
   travel: {
-    locations: string;
-    payAndExpenses: string;
-    notes: string;
+    locations?: string;
+    payAndExpenses?: string;
+    notes?: string;
   };
-  isMAPA: boolean;
-  isMinority: boolean;
-  notes: string;
+  isMAPA?: boolean;
+  isMinority?: boolean;
+  coaching?: boolean;
+  notes?: string;
 }>;
 
 const { frontmatter } = Astro.props;
@@ -57,6 +58,7 @@ const {
   travel: { locations: travelLocations, payAndExpenses, notes: travelNotes },
   isMAPA,
   isMinority,
+  coaching,
   notes,
 } = frontmatter;
 ---
@@ -175,95 +177,125 @@ const {
       </section>
       <section>
         <h2>Speaking</h2>
-        <div class="row col-2">
-          <div>
-            <h3>Experience</h3>
-            <ul class="items-list">
-              {experience.map((exp) => <li>{exp}</li>)}
-            </ul>
-          </div>
-          <div>
-            <h3>Engagements</h3>
-            <p>{engagements}</p>
-          </div>
-        </div>
-        <div class="row">
-          <div>
-            <h3>Likes to talk about</h3>
-            <ul>
-              {topics.map((topic) => <li>{topic}</li>)}
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div>
-            <h3>Previous Talks</h3>
-            <div>
+        {
+          (experience || engagements) && (
+            <div class="row col-2">
+              {experience && (
+                <div>
+                  <h3>Experience</h3>
+                  <ul class="items-list">
+                    {experience.map((exp) => (
+                      <li>{exp}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {engagements && (
+                <div>
+                  <h3>Engagements</h3>
+                  <p>{engagements}</p>
+                </div>
+              )}
+            </div>
+          )
+        }
+        {
+          topics && (
+            <div class="row">
               <div>
-                <h4>Youtube</h4>
-                <ul class="youtube-wrapper">
-                  {
-                    youtube.map((talk) => {
-                      const isYoutubeLink = talk.url.match(
-                        /(?:https?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((?:\w|-){11})(?![\w-])/
-                      );
-                      const videoId = isYoutubeLink ? isYoutubeLink[1] : null;
-                      const startTime = talk.url.match(/t=(\d+)/);
-
-                      return (
-                        <li>
-                          <iframe
-                            src={`https://www.youtube.com/embed/${videoId}${
-                              startTime ? `?start=${startTime[1]}` : ""
-                            }`}
-                            title={talk.title}
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                          />
-                        </li>
-                      );
-                    })
-                  }
-                </ul>
-              </div>
-              <div>
-                <h4>Others</h4>
-                <ul class="others-wrapper">
-                  {
-                    others.map((talk) => (
-                      <li>
-                        <a href={talk.url}>
-                          {talk.title}
-                          {talk.description && <p>{talk.description}</p>}
-                        </a>
-                      </li>
-                    ))
-                  }
+                <h3>Likes to talk about</h3>
+                <ul>
+                  {topics.map((topic) => (
+                    <li>{topic}</li>
+                  ))}
                 </ul>
               </div>
             </div>
-          </div>
-        </div>
+          )
+        }
+        {
+          (youtube || others) && (
+            <div class="row">
+              <div>
+                <h3>Previous Talks</h3>
+                {youtube && (
+                  <div>
+                    <h4>Youtube</h4>
+                    <ul class="youtube-wrapper">
+                      {youtube.map((talk) => {
+                        const isYoutubeLink = talk.url.match(
+                          /(?:https?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((?:\w|-){11})(?![\w-])/
+                        );
+                        const videoId = isYoutubeLink ? isYoutubeLink[1] : null;
+                        const startTime = talk.url.match(/t=(\d+)/);
+
+                        return (
+                          <li>
+                            <iframe
+                              src={`https://www.youtube.com/embed/${videoId}${
+                                startTime ? `?start=${startTime[1]}` : ""
+                              }`}
+                              title={talk.title}
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                              allowfullscreen
+                            />
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                )}
+                {others && (
+                  <div>
+                    <h4>Others</h4>
+                    <ul class="others-wrapper">
+                      {others.map((talk) => (
+                        <li>
+                          <a href={talk.url}>
+                            {talk.title}
+                            {talk.description && <p>{talk.description}</p>}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          )
+        }
       </section>
       <section>
         <h2>Travel</h2>
-        <div class="row col-2">
-          <div>
-            <h3>Locations</h3>
-            <p>{travelLocations}</p>
-          </div>
-          <div>
-            <h3>Pay and Expenses</h3>
-            <p>{payAndExpenses}</p>
-          </div>
-        </div>
-        <div class="row">
-          <div>
-            <h3>Notes</h3>
-            <p>{travelNotes}</p>
-          </div>
-        </div>
+        {
+          (travelLocations || payAndExpenses) && (
+            <div class="row col-2">
+              {travelLocations && (
+                <div>
+                  <h3>Locations</h3>
+                  <p>{travelLocations}</p>
+                </div>
+              )}
+              {payAndExpenses && (
+                <div>
+                  <h3>Pay and Expenses</h3>
+                  <p>{payAndExpenses}</p>
+                </div>
+              )}
+            </div>
+          )
+        }
+        {
+          travelNotes && (
+            <div class="row">
+              <div>
+                <h3>Notes</h3>
+                <p>{travelNotes}</p>
+              </div>
+            </div>
+          )
+        }
       </section>
       <section>
         <h2>Additional Information</h2>
@@ -321,11 +353,25 @@ const {
             <p>{isMinority ? "Yes" : "No"}</p>
           </div>
         </div>
+        {
+          coaching && (
+            <div class="row">
+              <div>
+                <h3>Willing to provide coaching and advice to new speakers</h3>
+                <p>{coaching ? "Yes" : "No"}</p>
+              </div>
+            </div>
+          )
+        }
       </section>
-      <section>
-        <h2>Other notes</h2>
-        <p>{notes}</p>
-      </section>
+      {
+        notes && (
+          <section>
+            <h2>Other notes</h2>
+            <p>{notes}</p>
+          </section>
+        )
+      }
     </div>
   </div>
 </Layout>
@@ -503,7 +549,7 @@ const {
     }
     .seprator {
       width: 1px;
-      height: 100%;
+      height: 130px;
     }
     .content .row.col-2 {
       display: grid;
