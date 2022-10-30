@@ -31,6 +31,11 @@ topics:
   - Green Software Principles & Patterns
   - Software Carbon Intensity Standard
   - Green Team Topologies
+interests:
+  - Software
+  - Web
+  - Mobile
+  - AI
 talks:
   youtube:
     - title: JavaScript Saves the World

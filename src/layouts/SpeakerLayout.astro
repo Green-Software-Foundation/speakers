@@ -19,6 +19,7 @@ type Props = MarkdownLayoutProps<{
   experience?: string[];
   engagements?: string;
   topics?: string[];
+  interests?: string[];
   talks: {
     youtube?: {
       title: string;
@@ -54,6 +55,7 @@ const {
   experience,
   engagements,
   topics,
+  interests,
   talks: { youtube, others },
   travel: { locations: travelLocations, payAndExpenses, notes: travelNotes },
   isMAPA,
@@ -200,16 +202,28 @@ const {
           )
         }
         {
-          topics && (
-            <div class="row">
-              <div>
-                <h3>Likes to talk about</h3>
-                <ul>
-                  {topics.map((topic) => (
-                    <li>{topic}</li>
-                  ))}
-                </ul>
-              </div>
+          (topics || interests) && (
+            <div class="row col-2">
+              {topics && (
+                <div>
+                  <h3>Likes to talk about</h3>
+                  <ul>
+                    {topics.map((topic) => (
+                      <li>{topic}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {interests && (
+                <div>
+                  <h3>Area of Interest</h3>
+                  <ul class="items-list">
+                    {interests.map((interest) => (
+                      <li>{interest}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           )
         }
