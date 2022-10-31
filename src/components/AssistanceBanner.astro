@@ -1,0 +1,83 @@
+<section>
+  <h2>Need Assistance?</h2>
+  <p>
+    We are more than happy to answer your question and hear your comments.
+    Please feel free to contact us.
+  </p>
+  <a href="mailto:anita@greensoftware.foundation" class="button white"
+    >Contact us</a
+  >
+</section>
+<style>
+  section {
+    background-color: var(--primary);
+    padding: 4rem 2em;
+    border-radius: 1em;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  section::before {
+    content: "";
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    width: calc(166px / 2);
+    height: calc(186px / 2);
+    background-image: url("/images/leaf-up.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  section::after {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    left: -1rem;
+    width: calc(166px / 2);
+    height: calc(186px / 2);
+    background-image: url("/images/leaf-down.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h2 {
+    font-weight: 900;
+    margin-bottom: 1rem;
+  }
+  p {
+    margin: 0;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+  }
+  @media (min-width: 768px) {
+    section {
+      padding: 4rem 6em;
+      margin-bottom: 6rem;
+    }
+    section::before,
+    section::after {
+      width: 166px;
+      height: 186px;
+    }
+    section::before {
+      top: -2rem;
+      right: -2rem;
+    }
+    section::after {
+      bottom: -2rem;
+      left: -2rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+</style>

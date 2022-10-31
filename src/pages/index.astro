@@ -1,0 +1,107 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SpeakersCatalog from "../components/SpeakersCatalog";
+import type { Speaker } from "../components/types";
+import AssistanceBanner from "../components/AssistanceBanner.astro";
+
+const markdownSpeakers = await Astro.glob<Speaker>("./speakers/*.md");
+const speakers: Speaker[] = markdownSpeakers.map((s) => {
+  return {
+    url: s.url,
+    location: s.frontmatter.location,
+    name: s.frontmatter.name,
+    company: s.frontmatter.company,
+    image: s.frontmatter.social.github
+      ? `https://github.com/${s.frontmatter.social.github}.png`
+      : "/images/empty-profile-picture.png",
+    position: s.frontmatter.position,
+    social: s.frontmatter.social,
+    languages: s.frontmatter.languages,
+  };
+});
+---
+
+<Layout>
+  <section>
+    <div class="content">
+      <div>
+        <h1>FIND A GREEN SOFTWARE SPEAKER</h1>
+        <p class="subtitle">
+          No major IT conference should take place without at least one green
+          software speaker
+        </p>
+        <div class="description">
+          <p>
+            Finding those speakers can be hard which is why the Green Software
+            Foundation has created this comprehensive catalogue of speakers in
+            the area of green software. It also facilitates the search and
+            booking of world-class speakers in the green software space.
+          </p>
+          <p>
+            Contacting individual or multiple speakers is made easy and secure
+            through the platform. You will be able to search by areas of
+            expertise, by certifications, geography, languages, and more to find
+            the right speaker for your event.
+          </p>
+        </div>
+      </div>
+      <div class="illustration">
+        <img src="/images/speakers.svg" alt="Speakers loves green software" />
+      </div>
+    </div>
+  </section>
+  <SpeakersCatalog speakers={speakers} client:load />
+  <AssistanceBanner />
+</Layout>
+
+<style>
+  section {
+    margin-bottom: 2rem;
+  }
+  h1 {
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: var(--primary);
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .subtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--primary);
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .description {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--grey-darker);
+    line-height: 1.5rem;
+  }
+  .description p:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+  @media (min-width: 768px) {
+    section {
+      margin-bottom: 5rem;
+    }
+    .content {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 7rem;
+      align-items: center;
+    }
+    h1 {
+      font-size: 2.25rem;
+    }
+    .subtitle {
+      font-size: 1.5rem;
+    }
+    .description {
+      font-size: 1.125rem;
+    }
+    .illustration img {
+      margin-left: auto;
+    }
+  }
+</style>
