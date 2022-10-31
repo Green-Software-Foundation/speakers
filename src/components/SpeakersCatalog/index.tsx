@@ -14,8 +14,13 @@ const SpeakersCatalog = ({ speakers }: Props) => {
     setSpeakerList(
       speakers.filter((speaker) => {
         return (
-          speaker.name.toLowerCase().includes(value.toLowerCase()) ||
-          speaker.location.toLowerCase().includes(value.toLowerCase())
+          speaker.name?.toLowerCase().includes(value.toLowerCase()) ||
+          speaker.company?.toLowerCase().includes(value.toLowerCase()) ||
+          speaker.location?.toLowerCase().includes(value.toLowerCase()) ||
+          speaker.languages
+            ?.join(", ")
+            .toLowerCase()
+            .includes(value.toLowerCase())
         );
       })
     );

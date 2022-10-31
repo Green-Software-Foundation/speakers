@@ -36,7 +36,6 @@ talks:
 travel:
   locations: Willing to travel worldwide
   payAndExpenses: Payment and expenses
-  notes: Willing to travel worldwide
 isMAPA: false
 isMinority: false,
 coaching: false

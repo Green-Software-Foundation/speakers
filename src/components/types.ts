@@ -5,6 +5,7 @@ type Speaker = {
   name: string;
   position: string;
   company: string;
+  languages: string[];
   social: {
     twitter?: string;
     github: string;

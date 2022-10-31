@@ -23,6 +23,13 @@ topics:
   - SRE
   - Kubernetes
   - Javascript
+interests:
+  - Carbon Awareness
+  - Infrastructure
+  - Reliability
+  - SRE
+  - Kubernetes
+  - Javascript
 talks:
   youtube:
     - title: Sustainable Software Engineering
@@ -41,7 +48,7 @@ talks:
     - title: Engineering software to save the planet
       url: https://devopsdays.org/events/2022-seattle/program/bill-johnson
 travel:
-  locations: Bill is willing to travel
+  locations: Willing to travel
 isMAPA: false
 isMinority: false
 coaching: true
