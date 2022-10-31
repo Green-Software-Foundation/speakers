@@ -21,27 +21,15 @@ Members of the Green Software Foundation also meet and discuss aspects of this p
 
 Instructions for how to contribute to this project can be found in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
-## Editing Content
-
-This project is a static website based on the project https://docusaurus.io, you can find more information about docusaurus here: https://docusaurus.io/docs
-
-The `docs` folder contains all of the material in this project, editing any file there in the `main` branch will update the website. If you are only interested in editing content on the website then you should not need to leave the `docs` folder.
-
-The documentation files use a format called markdown and they end in `.md` which supports certain basic styling features like so: https://docusaurus.io/docs/markdown-features
-
 ## Developing Locally
 
 To edit this project on your local machine and see the output as it would be rendered on the website you will need `node` at least version 14 installed.
 
-We also recommend to use `yarn` as the package management solution as the deployment scripts use `yarn` not `npm`.
-
-`npm -g install yarn`
-
-`yarn install`
+`npm install`
 
 Then to run the project locally type
 
-`yarn run docusaurus start`
+`npm start`
 
 and visit https://localhost:3000 in your favorite browser or whatever the command above prints out in the terminal.
 
