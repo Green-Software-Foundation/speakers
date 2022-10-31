@@ -54,9 +54,9 @@ const SpeakersCatalog = ({ speakers }: Props) => {
           return <Card key={speaker.name} {...speaker} image={speaker.image} />;
         })}
       </div>
-      <div className={Styles.btn_wrapper}>
+      {/* <div className={Styles.btn_wrapper}>
         <button className="button outline">View All speakers</button>
-      </div>
+      </div> */}
     </section>
   );
 };

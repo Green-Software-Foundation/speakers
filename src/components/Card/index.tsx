@@ -2,7 +2,7 @@ import type { Speaker } from "../types";
 import Styles from "./styles.module.css";
 const Card = ({ url, location, image, name, position, company }: Speaker) => {
   return (
-    <a href={url}>
+    <a className={Styles.wrapper} href={url}>
       <div className={Styles.container}>
         <p className={Styles.location}>{location}</p>
         <img className={Styles.avatar} src={image} />

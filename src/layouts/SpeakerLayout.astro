@@ -11,7 +11,7 @@ type Props = MarkdownLayoutProps<{
   languages: string[];
   social: {
     twitter?: string;
-    linkedin: string;
+    linkedin?: string;
     github?: string;
     website?: string;
   };
@@ -20,7 +20,7 @@ type Props = MarkdownLayoutProps<{
   engagements?: string;
   topics?: string[];
   interests?: string[];
-  talks: {
+  talks?: {
     youtube?: {
       title: string;
       url: string;
@@ -31,7 +31,7 @@ type Props = MarkdownLayoutProps<{
       url: string;
     }[];
   };
-  travel: {
+  travel?: {
     locations?: string;
     payAndExpenses?: string;
     notes?: string;
@@ -56,8 +56,8 @@ const {
   engagements,
   topics,
   interests,
-  talks: { youtube, others },
-  travel: { locations: travelLocations, payAndExpenses, notes: travelNotes },
+  talks,
+  travel,
   isMAPA,
   isMinority,
   coaching,
@@ -106,7 +106,13 @@ const {
       </span> Speakers Catalog</a
     >
     <div class="main-card">
-      <img class="avatar" src={`https://github.com/${github}.png`} alt={name} />
+      <img
+        class="avatar"
+        src={github
+          ? `https://github.com/${github}.png`
+          : "/images/empty-profile-picture.png"}
+        alt={name}
+      />
       <div class="card-content">
         <h1 class="name">
           {name}
@@ -217,26 +223,30 @@ const {
               {interests && (
                 <div>
                   <h3>Area of Interest</h3>
-                  <ul class="items-list">
-                    {interests.map((interest) => (
-                      <li>{interest}</li>
-                    ))}
-                  </ul>
+                  {interests.length === 1 ? (
+                    <p>{interests[0]}</p>
+                  ) : (
+                    <ul class="items-list">
+                      {interests.map((interest) => (
+                        <li>{interest}</li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               )}
             </div>
           )
         }
         {
-          (youtube || others) && (
+          (talks?.youtube || talks?.others) && (
             <div class="row">
               <div>
                 <h3>Previous Talks</h3>
-                {youtube && (
+                {talks.youtube && (
                   <div>
                     <h4>Youtube</h4>
                     <ul class="youtube-wrapper">
-                      {youtube.map((talk) => {
+                      {talks.youtube.map((talk) => {
                         const isYoutubeLink = talk.url.match(
                           /(?:https?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((?:\w|-){11})(?![\w-])/
                         );
@@ -260,13 +270,17 @@ const {
                     </ul>
                   </div>
                 )}
-                {others && (
+                {talks.others && (
                   <div>
                     <h4>Others</h4>
                     <ul class="others-wrapper">
-                      {others.map((talk) => (
+                      {talks.others.map((talk) => (
                         <li>
-                          <a href={talk.url}>
+                          <a
+                            href={talk.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             {talk.title}
                             {talk.description && <p>{talk.description}</p>}
                           </a>
@@ -280,32 +294,33 @@ const {
           )
         }
       </section>
+
       <section>
-        <h2>Travel</h2>
         {
-          (travelLocations || payAndExpenses) && (
+          (travel?.locations || travel?.payAndExpenses) && (
+        <h2>Travel</h2>
             <div class="row col-2">
-              {travelLocations && (
+              {travel.locations && (
                 <div>
                   <h3>Locations</h3>
-                  <p>{travelLocations}</p>
+                  <p>{travel.locations}</p>
                 </div>
               )}
-              {payAndExpenses && (
+              {travel.payAndExpenses && (
                 <div>
                   <h3>Pay and Expenses</h3>
-                  <p>{payAndExpenses}</p>
+                  <p>{travel.payAndExpenses}</p>
                 </div>
               )}
             </div>
           )
         }
         {
-          travelNotes && (
+          travel?.notes && (
             <div class="row">
               <div>
                 <h3>Notes</h3>
-                <p>{travelNotes}</p>
+                <p>{travel.notes}</p>
               </div>
             </div>
           )
@@ -485,8 +500,8 @@ const {
     margin-bottom: 1rem;
   }
   .socials img {
-    height: 24px;
-    width: auto;
+    width: 24px;
+    height: auto;
   }
   .content section {
     margin-bottom: 2rem;
@@ -534,13 +549,13 @@ const {
     flex-direction: column;
     gap: 0.5rem;
   }
-  .others-wrapper li {
+  .others-wrapper li a{
     padding: 1.5rem;
     background: #ffffff;
     box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24),
       0px 3px 8px -1px rgba(50, 50, 71, 0.05);
-    margin-bottom: 0.5rem;
     border-radius: 0.5rem;
+    display: block;
   }
   .others-wrapper p {
     font-size: 0.875rem;
@@ -559,7 +574,7 @@ const {
       padding: 2rem 3.5rem;
     }
     .card-content {
-      width: 300px;
+      width: 316px;
     }
     .seprator {
       width: 1px;
