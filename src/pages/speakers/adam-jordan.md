@@ -19,9 +19,9 @@ topics:
   - None specific. I am an engineer and scientist first. Expected a nuanced and practical conversation based on a structured vision.
 talks:
 others:
-    - title: 2022: QCon San Francisco, Green Software Foundation summit
+  - title: "2022: QCon San Francisco, Green Software Foundation summit"
 travel:
-  locations: Willing to travel 
+  locations: Willing to travel
 isMAPA: false
 isMinority: false,
 coaching: false
