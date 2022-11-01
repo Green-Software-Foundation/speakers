@@ -16,14 +16,12 @@ experience:
   - Keynotes
 engagements: 6-20
 topics:
-  - <none specific> I am an engineer and scientist first. Expected a nuanced and practical conversation based on a structured vision.
+  - None specific. I am an engineer and scientist first. Expected a nuanced and practical conversation based on a structured vision.
 talks:
 others:
     - title: 2022: QCon San Francisco, Green Software Foundation summit
-      url: 
 travel:
   locations: Willing to travel 
-  payAndExpenses: 
 isMAPA: false
 isMinority: false,
 coaching: false
