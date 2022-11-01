@@ -17,7 +17,7 @@ experience:
   - Keynotes
 engagements: 50+
 topics:
-  - Short Paragraph
+  - Green Software Foundation
 interests:
   - Software
   - Web
