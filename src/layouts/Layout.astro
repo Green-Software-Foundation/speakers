@@ -129,6 +129,14 @@ import "@fontsource/nunito-sans/900.css";
         >
       </div>
     </header>
+    <div class="patterns-wrapper">
+      <div class="left-pattern">
+        <img src="/images/pattern-left.svg" alt="Pattern" />
+      </div>
+      <div class="right-pattern">
+        <img src="/images/pattern-right.svg" alt="Pattern" />
+      </div>
+    </div>
     <main>
       <slot />
     </main>
@@ -405,9 +413,28 @@ import "@fontsource/nunito-sans/900.css";
         display: flex;
         justify-content: center;
       }
+      .left-pattern,
+      .right-pattern {
+        position: absolute;
+        user-select: none;
+        pointer-events: none;
+        z-index: 0;
+        display: none;
+      }
+      .left-pattern {
+        left: 0;
+        top: 500px;
+      }
+      .right-pattern {
+        right: 0;
+        top: 700px;
+      }
       main {
         padding: 0 24px;
+        z-index: 1;
+        position: relative;
       }
+
       footer {
         background-color: var(--primary-darkest);
       }
@@ -500,6 +527,12 @@ import "@fontsource/nunito-sans/900.css";
         .footer-text {
           font-size: 0.875rem;
           max-width: 400px;
+        }
+      }
+      @media (min-width: 1200px) {
+        .left-pattern,
+        .right-pattern {
+          display: block;
         }
       }
     </style>
