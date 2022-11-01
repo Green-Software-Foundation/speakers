@@ -23,6 +23,6 @@ others:
 travel:
   locations: Willing to travel
 isMAPA: false
-isMinority: false,
+isMinority: false
 coaching: false
 ---
