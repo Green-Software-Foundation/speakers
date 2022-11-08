@@ -4,7 +4,7 @@ name: Bill Johnson
 pronoun: he/him
 position: Principal Engineering Manager
 company: Microsoft
-location: Seattle, WA, United States
+location: Seattle, WA, USA
 languages:
   - English
 social:
