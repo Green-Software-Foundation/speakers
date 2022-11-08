@@ -2,7 +2,7 @@
 layout: ../../layouts/SpeakerLayout.astro
 name: Nina Zhou
 pronoun: She/Her
-position: Head of DEI, Sustainability and Social Change Thoughtworks China
+position: Head of DEI, Sustainability and Social Change
 company: Thoughtworks
 location: Shanghai, China
 languages:
