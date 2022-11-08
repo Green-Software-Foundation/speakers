@@ -4,7 +4,7 @@ name: Asim Hussain
 pronoun: He/Him
 position: Chairperson & Executive Director
 company: Green Software Foundation
-location: Crawley, London
+location: Crawley, London, UK
 languages:
   - English
   - Spanish
