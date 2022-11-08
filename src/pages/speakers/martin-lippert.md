@@ -4,7 +4,7 @@ name: Martin Lippert
 pronoun: He/Him
 position: Spring Tools Lead & Sustainability Ambassador
 company: VMware
-location: Hamburg - Germany - Central Europe
+location: Hamburg, Germany
 languages:
   - English
   - German
