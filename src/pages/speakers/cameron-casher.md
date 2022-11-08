@@ -4,7 +4,7 @@ name: Cameron Casher
 pronoun: He/Him
 position: Senior Consultant Software Developer & Clean Tech Strategist
 company: Thoughtworks
-location: Denver, Colorado USA
+location: Denver, Colorado, USA
 languages:
   - English
 social:
