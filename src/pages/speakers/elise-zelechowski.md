@@ -4,7 +4,7 @@ name: Elise Zelechowski
 pronoun: She/Her
 position: Head of DEI, Sustainability and Social Change
 company: Thoughtworks
-location: Chicago
+location: Chicago, USA
 languages:
   - English
 social:
