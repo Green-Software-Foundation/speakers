@@ -7,7 +7,6 @@ company: Green Software Foundation
 location: Crawley, London, UK
 languages:
   - English
-  - Spanish
 social:
   github: jawache
   linkedin: jawache
