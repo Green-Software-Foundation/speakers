@@ -28,7 +28,7 @@ topics:
 interests:
   - Measuring and minimizing the carbon impact of web applications
 talks:
-  other: 
+  others:
     - title: Talks and Slides
       url: https://exortech.com/presentations/
 travel:
