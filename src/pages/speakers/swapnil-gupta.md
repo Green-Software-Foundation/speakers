@@ -23,5 +23,5 @@ travel:
 isMAPA: false
 isMinority: false
 coaching: false
-notes: "Willing to learn and contribute."
+notes: "Willing to learn and contribute"
 ---
