@@ -11,7 +11,7 @@ languages:
 social:
   github: thornet
   twitter: thornet
-  website: michellethorne.cc
+  website: https://michellethorne.cc/
 bio: "Senior Advisor to the Green Web Foundation. Sustainable Internet Lead at the Mozilla Foundation. Editor of Branch Magazine."
 experience:
   - Meetups
