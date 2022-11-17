@@ -31,6 +31,8 @@ talks:
       url: https://sessionize.com/francesco-fullone/
     - title: YouTube
       url: https://www.youtube.com/results?search_query=francesco+fullone+talk
+    - title: Green principles
+      url: https://vimeo.com/767779312
     - title: "Life Cycle Design e Circular Economy: un caso reale"
       url: https://www.slideshare.net/fullo
     - title: "Life Cycle Design e Circular Economy: un caso reale – presentation"

@@ -36,4 +36,5 @@ travel:
 isMAPA: false
 isMinority: false
 coaching: true
+notes: "Happy to share perspectives from a cloud native, platform perspective."
 ---
