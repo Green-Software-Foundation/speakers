@@ -8,10 +8,10 @@ location: xxx #replace placeholder with [city, country] Note: USA, UK
 languages: #do not change this line
   - English #add languages on a new line, starting with a dash (-) and a space
 social: #do not change this line
-  github: danielvaughan #replace placeholder with github id
-  linkedin: danielpvaughan #replace if needed (remove if left blank)
-  twitter: danielvaughan #replace if needed (remove if left blank)
-  website: https://blog.danielvaughan.com/ #replace if needed (remove if left blank)
+  github: xxx #replace placeholder with github id
+  linkedin: xxx #replace if needed (remove if left blank)
+  twitter: xxx #replace if needed (remove if left blank)
+  website: https://xxx #replace if needed (remove if left blank)
 bio: xxx #replace placeholder with bio
 experience: #do not change this line
   - xxx #add experience on a new line, starting with a dash (-) and a space
