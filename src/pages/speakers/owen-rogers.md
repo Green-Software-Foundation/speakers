@@ -11,7 +11,7 @@ social:
   github: exortech
   linkedin: exortech
   twitter: exortech
-  website: https://exortech/com
+  website: https://exortech.com
 bio: "I guide teams in building software to make the world a better place. My specific focus is on solutions to address energy efficiency and climate change."
 experience:
   - Meetups
