@@ -19,7 +19,8 @@ topics:
   - Carbon aware SDK 
   - Can learn and build up on more topics
 travel:
-  locations: Willing to travel worldwide
+  locations: Willing to travel within India
+  payAndExpenses: Self
 isMAPA: false
 isMinority: false
 coaching: false
