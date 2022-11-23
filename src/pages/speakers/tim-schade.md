@@ -31,14 +31,14 @@ interests:
   - Sustainability
 talks:
   youtube:
-    - title: GreenCoding: Wie kann Software helfen CO2 Emissionen einzusparen?
+    - title: "GreenCoding – Wie kann Software helfen CO2 Emissionen einzusparen?"
       url: https://www.youtube.com/watch?v=6osdEGhh8eg
-    - title: FEBRABAN TECH 2022: Greencoding é a nova fronteira de desenvolvimento de software
+    - title: "FEBRABAN TECH 2022 – Greencoding é a nova fronteira de desenvolvimento de software"
       url: https://www.youtube.com/watch?v=GMJDDhcOGAU
-    - title: GreenCoding: Welche Rolle spielt Software bei der Err. von Klimazielen, GFT, INDUSTRY.forward EXPO22
+    - title: "GreenCoding – Welche Rolle spielt Software bei der Err. von Klimazielen, GFT, INDUSTRY.forward EXPO22"
       url: https://www.youtube.com/watch?v=0RUHdT3Rc9M
   others:
-    - title: GREENCODING: DER EINFLUSS VON SOFTWARE AUF TREIBHAUSGASEMISSIONEN
+    - title: "GREENCODING – DER EINFLUSS VON SOFTWARE AUF TREIBHAUSGASEMISSIONEN"
       url: https://jax.de/core-java-jvm-languages/greencoding-der-einfluss-von-software-auf-treibhausgasemissionen/
 travel:
   locations: Willing to travel 
