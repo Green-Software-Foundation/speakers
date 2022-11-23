@@ -42,6 +42,8 @@ talks:
       url: https://www.youtube.com/watch?v=ilTefIP_b1E
     - title: "Javantura 2019, Zagreb, Croatia: How to improve the quality of your application"
       url: https://www.youtube.com/watch?v=pvWwOgUOJBU
+    - title: "Fighting Climate Change by Building Sustainable Software • Ioannis Kolaxis • GOTO 2022"
+      url: https://www.youtube.com/watch?v=NjrObiE6_tE
   others:
     - title: GOTO Amsterdam 2022, Netherlands
       description: Fighting Climate Change by Building Sustainable Software
