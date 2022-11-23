@@ -22,8 +22,8 @@ experience:
 engagements: 6-20
 topics:
   - "Green Coding Principles & Guidelines"
-  - "Carbon Aware Programming
-  - "Green Leadership"
+  - Carbon Aware Programming
+  - Green Leadership
 interests:
   - Java
   - Architecture
