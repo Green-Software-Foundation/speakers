@@ -8,6 +8,7 @@ location: Chicago, USA
 languages:
   - English
 social:
+  github: paulalanhunter
   linkedin: paulalanhunter
 bio: "Paul Hunter is the Global Sustainability Manager at digital innovation consultancy Kin + Carta, the first BCorp on the London Stock Exchange. He owns the development of tech-oriented sustainability solutions for the global firm. He has been featured in various magazines, whitepapers, and conferences around the globe on the role that tech is playing in solving some of the greatest sustainability challenges of our time."
 experience:
