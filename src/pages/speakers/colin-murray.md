@@ -2,7 +2,7 @@
 layout: ../../layouts/SpeakerLayout.astro
 name: Colin Murray
 pronoun: He/Him
-position: Technology Sustainability
+position: Technology Sustainability Lead
 company: Accenture
 location: Singapore
 languages:
