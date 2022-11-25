@@ -9,7 +9,7 @@ languages:
 social:
   github: vtarunselvan
   linkedin: arunvt
-bio: "Arun is an Accenture Technology Sustainability Senior Manager with experiences in cloud first, sustainable technologies, green cloud advisory, enterprise architecture and digital transformation experience. 
+bio: "Arun is a Technology Sustainability Senior Manager with experiences in cloud first, sustainable technologies, green cloud advisory, enterprise architecture and digital transformation experience. 
 Arun has an extensive knowledge of running large scale cloud enabled transformation programmes including green IT and sustainable enterprise architecture framework. 
 In his tenure at Accenture, he has advised several clients from different industry groups across globally (UK, US and Singapore)."
 experience:
