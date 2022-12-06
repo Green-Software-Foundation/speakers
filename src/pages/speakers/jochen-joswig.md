@@ -32,5 +32,4 @@ travel:
   locations: Willing to travel 
 isMAPA: false
 coaching: true
-notes: "I have developed a lightweight method to systematically approach the topic of sustainability during software development. I have experience from giving talks and lectures at universities and colleges, and I am working on different trainings and courses for everyone involved in the creation of software." 
 ---
