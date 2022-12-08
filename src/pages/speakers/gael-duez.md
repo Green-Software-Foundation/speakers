@@ -23,7 +23,7 @@ topics:
   - ICT environmental footprint
   - Life Cycle Analysis
   - Green Cloud
-  - Trailblazing a path in Tech organization
+  - Trailblazing a path towards sustainability in Tech organization
   - "Changing our mindset towards Tech (pharmakon)"
 interests:
   - Measurement
@@ -31,7 +31,7 @@ interests:
   - Change management
 travel:
   locations: Willing to travel worldwide
-  payAndExpenses: "Payment is to be discussed regarding the audience size, the level of personalization as well as the type of client (NGO, bCorp, Education, public sector & private sector companies"
+  payAndExpenses: "Payment is to be discussed regarding the audience size, the level of personalization as well as the type of client (NGO, bCorp, Education, public sector & private sector companies)"
 isMAPA: false
 coaching: false
 notes: "Past 3 months talks include HSCB Continental Europe (EN), Center Park (EN), Medef (FR) and DigitalReunion (FR). Being based in La Réunion (while still working mostly in Europe), I can easily speak in events happening in East Africa."
