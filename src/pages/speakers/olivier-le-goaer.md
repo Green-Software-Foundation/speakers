@@ -12,8 +12,8 @@ social:
   linkedin: olivierlegoaer
   website: https://olegoaer.perso.univ-pau.fr/
 bio: "My research work focuses on developer-centric methods, concepts and tools to create lower-carbon software. 
-I supervise the development of the tool ecoCode, based on SonarQube. 
-I also founded an annual summer school on green IT and a course on software sustainability for students at the master's level."
+I supervise the development of the open source tool ecoCode, based on SonarQube. 
+I also launched a summer school serie on green IT and a course on software sustainability for students at the master's level."
 experience:
   - Meetups
   - Track Talks
@@ -24,8 +24,8 @@ topics:
   - "How to teach sustainability to developers"
 interests:
   - Best practices
-  - Teaching
-  - Tooling
+  - Mobile
+  - Web
 talks:
   others:
     - title: Talks
