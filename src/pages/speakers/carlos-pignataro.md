@@ -46,5 +46,6 @@ talks:
 travel:
   locations: "Willing worldwide, but depending on a number of factors."
 isMAPA: false
+isMinority: true
 coaching: true
 ---
