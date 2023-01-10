@@ -36,6 +36,6 @@ travel:
   payAndExpenses: Travel & Expenses + Speaker fee
   notes: Would prefer air travel to be offset
 isMAPA: false
-isMinority: false,
+isMinority: false
 coaching: false
 ---
