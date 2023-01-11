@@ -2,8 +2,8 @@
 layout: ../../layouts/SpeakerLayout.astro
 name: Archana Joshi
 pronoun: She/Her
-position: Founder
-company: LTIMindtree and EcoITCon
+position: Founder (EcoITCon) and IT Strategy Leader
+company: EcoITCon and LTIMindtree
 location: India
 languages:
   - English
