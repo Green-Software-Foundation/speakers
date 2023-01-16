@@ -4,7 +4,7 @@ name: Ioannis Kolaxis
 pronoun: He/Him
 position: Principal Director, Technology Sustainability Innovation
 company: Accenture
-location: Athens, Greece
+location: Athens, Greece, Europe
 languages:
   - English
   - Greek
