@@ -4,7 +4,7 @@ name: Sara Bergman
 pronoun: She/Her
 position: Senior Software Engineer
 company: Microsoft
-location: Oslo, Norway
+location: Oslo, Norway, Europe
 languages:
   - English
   - Swedish
