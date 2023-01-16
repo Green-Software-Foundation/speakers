@@ -4,7 +4,7 @@ name: Niaz Ali Khan
 pronoun: He/Him
 position: Erasmus Mundus Scholar at SE4GD (Software Engineers for Green Deal)
 company: EU
-location: Lappeenranta, Finland
+location: Lappeenranta, Finland, Europe
 languages:
   - English
   - Urdu
