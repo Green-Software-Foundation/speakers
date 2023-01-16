@@ -4,7 +4,7 @@ name: Jochen Joswig
 pronoun: He/Him
 position: Senior Software Engineer
 company: MaibornWolff
-location: Hamburg, Germany
+location: Hamburg, Germany, Europe
 languages:
   - English
   - German
