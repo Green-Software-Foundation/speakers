@@ -4,7 +4,7 @@ name: Saurabh Kaushik
 pronoun: He/Him
 position: "Associate Partner - Garage Sustainability Engineering Leader"
 company: IBM
-location: Bangalore, India
+location: Bangalore, India, Asia
 languages:
   - English
 social:
