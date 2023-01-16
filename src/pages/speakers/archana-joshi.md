@@ -4,7 +4,7 @@ name: Archana Joshi
 pronoun: She/Her
 position: Founder (EcoITCon) and IT Strategy Leader
 company: EcoITCon and LTIMindtree
-location: India
+location: India, Asia
 languages:
   - English
 social:
