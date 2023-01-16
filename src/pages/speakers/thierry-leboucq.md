@@ -3,7 +3,7 @@ layout: ../../layouts/SpeakerLayout.astro
 name: Thierry Leboucq
 position: President
 company: GREENSPECTOR
-location: Nantes, France
+location: Nantes, France, Europe
 languages:
   - English
   - French
