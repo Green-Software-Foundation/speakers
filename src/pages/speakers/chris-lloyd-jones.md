@@ -4,7 +4,7 @@ name: Chris Lloyd-Jones
 pronoun: He/Him
 position: Head of Open Technologies
 company: Avanade
-location: London, UK
+location: London, UK, Europe
 languages:
   - English
 social:
