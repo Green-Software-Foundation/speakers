@@ -4,7 +4,7 @@ name: Praveenkumar Prem
 pronoun: He/Him
 position: "Europe Geography Head / Principal - Cloud Transformation Practice"
 company: WIPRO Digital
-location: Zürich, Switzerland
+location: Zürich, Switzerland, Europe
 languages:
   - English
 social:
