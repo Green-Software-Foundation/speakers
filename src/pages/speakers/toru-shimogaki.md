@@ -4,7 +4,7 @@ name: Toru Shimogaki
 pronoun: He/Him
 position: Head of Green Innovation Office
 company: NTT DATA
-location: Tokyo, Japan
+location: Tokyo, Japan, Asia
 languages:
   - English
   - Japanese
