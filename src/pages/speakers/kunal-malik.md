@@ -4,7 +4,7 @@ name: Kunal Malik
 pronoun: He/Him
 position: Lead Consultant (Business)
 company: Thoughtworks
-location: Gurgaon, India
+location: Gurgaon, India, Asia
 languages:
   - English
 social:
