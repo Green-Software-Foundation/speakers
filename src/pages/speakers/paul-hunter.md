@@ -4,7 +4,7 @@ name: Paul Hunter
 pronoun: He/Him
 position: Global Sustainability Manager
 company: "Kin + Carta"
-location: Chicago, USA
+location: Chicago, USA, North America
 languages:
   - English
 social:
