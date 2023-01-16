@@ -3,7 +3,7 @@ layout: ../../layouts/SpeakerLayout.astro
 name: Ziliang Zong
 position: Professor
 company: Texas State University
-location: Austin, TX, USA
+location: Austin, TX, USA, North America
 languages:
   - English
   - Mandarin
