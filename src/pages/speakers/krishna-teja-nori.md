@@ -4,7 +4,7 @@ name: Krishna Teja Nori
 pronoun: He/Him
 position: Business Analyst
 company: Thoughtworks
-location: India
+location: India, Asia
 languages:
   - English
 social:
