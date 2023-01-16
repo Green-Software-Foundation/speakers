@@ -4,7 +4,7 @@ name: Francesco Fullone
 pronoun: He/Him
 position: Business & Sustainability Designer
 company: Daruma Consulting
-location: Italy
+location: Italy, Europe
 languages:
   - English
   - Italian
