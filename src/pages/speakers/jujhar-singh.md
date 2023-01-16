@@ -4,7 +4,7 @@ name: Jujhar Singh
 pronoun: He/Him
 position: Lead Infrastructure Engineer
 company: Thoughtworks
-location: Birmingham, UK
+location: Birmingham, UK, Europe
 languages:
   - English
 social:
