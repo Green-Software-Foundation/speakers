@@ -4,7 +4,7 @@ name: Niels Freier
 pronoun: He/Him
 position: Chair
 company: Boston Consulting Group
-location: Paris, France
+location: Paris, France, Europe
 languages:
   - French
   - English
