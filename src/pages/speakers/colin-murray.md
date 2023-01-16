@@ -4,7 +4,7 @@ name: Colin Murray
 pronoun: He/Him
 position: Technology Sustainability Lead
 company: Accenture
-location: Singapore
+location: Singapore, Asia
 languages:
   - English
 social:
