@@ -4,7 +4,7 @@ name: Ricardo Henriques
 pronoun: He/Him
 position: Principal Engineering Manager
 company: Microsoft
-location: Lisbon, Portugal
+location: Lisbon, Portugal, Europe
 languages:
   - English
   - Portuguese
