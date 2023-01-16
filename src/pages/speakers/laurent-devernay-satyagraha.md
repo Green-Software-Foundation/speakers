@@ -4,7 +4,7 @@ name: Laurent Devernay Satyagraha
 pronoun: He/Him
 position: Sustainable Software Consultant
 company: Greenspector
-location: Saint-Gaudens, France
+location: Saint-Gaudens, France, Europe
 languages:
   - English
   - French
