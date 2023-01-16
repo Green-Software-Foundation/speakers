@@ -4,7 +4,7 @@ name: Stephanie Kamp
 pronoun: She/Her
 position: MBA, MA
 company: Syngenio AG
-location: Aachen, Germany
+location: Aachen, Germany, Europe
 languages:
   - German
   - English
