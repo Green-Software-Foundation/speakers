@@ -3,7 +3,7 @@ layout: ../../layouts/SpeakerLayout.astro
 name: Santiago Fontanarrosa
 position: VP of Technology
 company: Globant
-location: Rosario, Argentina
+location: Rosario, Argentina, South America
 languages:
   - English
   - Spanish
