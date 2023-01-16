@@ -4,7 +4,7 @@ name: Elmar Borgmeier
 pronoun: He/Him
 position: Co-Founder and Principal Consultant Green Software, Member of the GSF Standards Group
 company: Syngenio AG
-location: Stuttgart, Germany
+location: Stuttgart, Germany, Europe
 languages:
   - English
   - German
