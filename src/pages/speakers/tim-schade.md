@@ -3,7 +3,7 @@ layout: ../../layouts/SpeakerLayout.astro
 name: Tim Schade
 position: Software Architect
 company: GFT
-location: Cologne, Germany
+location: Cologne, Germany, Europe
 languages:
   - English
   - German

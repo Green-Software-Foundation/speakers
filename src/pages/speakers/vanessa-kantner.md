@@ -4,7 +4,7 @@ name: Vanessa Kantner
 pronoun: She/Her
 position: Manager FinOps
 company: Liquid Reply
-location: Berlin, Germany
+location: Berlin, Germany, Europe
 languages:
   - English
   - German

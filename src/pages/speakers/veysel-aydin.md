@@ -4,7 +4,7 @@ name: Veysel Aydin
 pronoun: He/Him
 position: Senior Business Analyst Consultant
 company: Thoughtworks
-location: Milton Keynes, UK
+location: Milton Keynes, UK, Europe
 languages:
   - English
   - Turkish

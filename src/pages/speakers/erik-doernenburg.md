@@ -4,7 +4,7 @@ name: Erik Doernenburg
 pronoun: He/Him
 position: Head of Technology
 company: Thoughtworks
-location: Hamburg, Germany
+location: Hamburg, Germany, Europe
 languages:
   - English
   - German

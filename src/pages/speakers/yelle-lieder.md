@@ -4,7 +4,7 @@ name: Yelle Lieder
 pronoun: He/Him
 position: Consultant Digitalization & Sustainability
 company: adesso SE
-location: Düsseldorf, Germany
+location: Düsseldorf, Germany, Europe
 languages:
   - English
   - German

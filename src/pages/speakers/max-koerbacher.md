@@ -4,7 +4,7 @@ name: Max Körbächer
 pronoun: He/Him
 position: Co-Founder & Cloud Native Advocate
 company: Liquid Reply
-location: Munich, Germany
+location: Munich, Germany, Europe
 languages:
   - English
   - German

@@ -3,7 +3,7 @@ layout: ../../layouts/SpeakerLayout.astro
 name: Marcelo Goberto de Azevedo
 position: Architect Cloud
 company: GFT
-location: "São Paulo, Brazil"
+location: "São Paulo, Brazil, South America"
 languages:
   - English
   - Portuguese

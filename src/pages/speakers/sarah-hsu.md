@@ -4,7 +4,7 @@ name: Sarah Hsu
 pronoun: She/Her
 position: Site Reliability Engineer
 company: Goldman Sachs
-location: London, UK & Taipei, Taiwan
+location: London, UK, Europe & Taipei, Taiwan, Asia
 languages:
   - English
 social:

@@ -3,7 +3,7 @@ layout: ../../layouts/SpeakerLayout.astro
 name: Dr. Anubha Jain
 position: Associate Professor and Head, Department of Computer Science & IT
 company: The IIS University
-location: Jaipur, India
+location: Jaipur, India, Asia
 languages:
   - English
 social:

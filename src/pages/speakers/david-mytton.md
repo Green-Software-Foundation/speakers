@@ -3,7 +3,7 @@ layout: ../../layouts/SpeakerLayout.astro
 name: David Mytton
 position: CEO
 company: Console
-location: London, UK
+location: London, UK, Europe
 languages:
   - English
 social:

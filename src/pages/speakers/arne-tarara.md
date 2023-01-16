@@ -4,7 +4,7 @@ name: Arne Tarara
 pronoun: He/Him
 position: CEO/Lead Engineer
 company: Green Coding Berlin GmbH
-location: Berlin, Germany
+location: Berlin, Germany, Europe
 languages:
   - English
   - German

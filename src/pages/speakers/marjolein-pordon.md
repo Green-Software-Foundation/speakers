@@ -3,7 +3,7 @@ layout: ../../layouts/SpeakerLayout.astro
 name: Marjolein Pordon
 position: Senior quality consultant
 company: "Fizor."
-location: Arnhem, The Netherlands
+location: Arnhem, The Netherlands, Europe
 languages:
   - English
   - Dutch

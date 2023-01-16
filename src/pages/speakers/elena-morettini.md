@@ -4,7 +4,7 @@ name: Elena Morettini
 pronoun: She/Her
 position: Sustainable Business Studio Director
 company: Globant 
-location: Buenos Aires/Madrid/London
+location: Buenos Aires/Madrid/London, South America/Europe
 languages:
   - English
   - Italian

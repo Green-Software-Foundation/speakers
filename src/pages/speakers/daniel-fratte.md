@@ -4,7 +4,7 @@ name: Daniel Fratte
 pronoun: He/Him
 position: Lead Software Engineer
 company: Thoughtworks
-location: Barcelona, Spain
+location: Barcelona, Spain, Europe
 languages:
   - English
   - Spanish

@@ -4,7 +4,7 @@ name: Sandra Pallier
 pronoun: She/Her
 position: "Designer • Co-organiser"
 company: "Microsoft • ClimateAction.tech"
-location: London, UK
+location: London, UK, Europe
 languages:
   - English
   - German

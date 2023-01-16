@@ -4,7 +4,7 @@ name: Roberto Freato
 pronoun: He/Him
 position: "Chief Technology Officer @Witailer | Book Author | Conference Speaker | Azure MVP"
 company: "Witailer | Retex"
-location: Milan, Italy
+location: Milan, Italy, Europe
 languages:
   - English
 social:

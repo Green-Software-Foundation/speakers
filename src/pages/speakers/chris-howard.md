@@ -4,7 +4,7 @@ name: Chris Howard
 pronoun: He/Him
 position: Lead Open Source Program Manager
 company: EPAM
-location: London, UK
+location: London, UK, Europe
 languages:
   - English
 social:

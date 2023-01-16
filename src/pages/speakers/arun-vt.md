@@ -3,7 +3,7 @@ layout: ../../layouts/SpeakerLayout.astro
 name: Arun VT
 position: Technology Sustainability Senior Manager
 company: Accenture
-location: Singapore
+location: Singapore, Asia
 languages:
   - English
 social:

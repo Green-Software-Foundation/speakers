@@ -4,7 +4,7 @@ name: Swapnil Gupta
 pronoun: She/Her
 position: Senior Consultant Developer, Community Lead
 company: Thoughtworks
-location: Hyderabad, India
+location: Hyderabad, India, Asia
 languages:
   - English
 social:

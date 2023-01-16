@@ -4,7 +4,7 @@ name: Paola Annis
 pronoun: She/Her
 position: Engineering Manager
 company: Microsoft
-location: Italy
+location: Italy, Europe
 languages:
   - English
   - Italian

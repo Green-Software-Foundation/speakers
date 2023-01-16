@@ -4,7 +4,7 @@ name: Abhishek Gupta
 pronoun: He/Him
 position: Founder and Principal Researcher (MAIEI), Senior Responsible AI Leader & Expert (BCG), Chair, Standards Working Group (GSF)
 company: Montreal AI Ethics Institute, BCG, and GSF
-location: Montreal, Canada
+location: Montreal, Canada, North America
 languages:
   - English
 social:

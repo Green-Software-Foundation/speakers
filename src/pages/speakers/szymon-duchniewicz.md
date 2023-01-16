@@ -4,7 +4,7 @@ name: Szymon Duchniewicz
 pronoun: He/Him
 position: Open Technology Engineer
 company: Avanade
-location: London, UK
+location: London, UK, Europe
 languages:
   - English
   - Polish

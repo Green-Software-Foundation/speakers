@@ -4,7 +4,7 @@ name: Srinivasan Rakhunathan
 pronoun: He/Him
 position: Senior Program Manager
 company: Microsoft
-location: Hyderabad, India
+location: Hyderabad, India, Asia
 languages:
   - English
 social:

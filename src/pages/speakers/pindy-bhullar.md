@@ -4,7 +4,7 @@ name: Pindy Bhullar
 pronoun: She/Her
 position: ESG CTO
 company: UBS
-location: London, UK
+location: London, UK, Europe
 languages:
   - English
 social:

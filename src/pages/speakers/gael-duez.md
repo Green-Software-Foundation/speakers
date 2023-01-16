@@ -3,7 +3,7 @@ layout: ../../layouts/SpeakerLayout.astro
 name: "Gaël Duez"
 position: Digital Sustainability Adocate
 company: Green I/O
-location: France
+location: France, Europe
 languages:
   - English
   - French

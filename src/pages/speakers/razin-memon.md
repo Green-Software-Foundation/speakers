@@ -4,7 +4,7 @@ name: Razin Memon
 pronoun: He/Him
 position: Programme Manager, Innovation lab
 company: Thoughtworks
-location: Ahmedabad, Gujarat, India
+location: Ahmedabad, Gujarat, India, Asia
 languages:
   - English
 social:

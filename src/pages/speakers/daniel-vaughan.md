@@ -4,7 +4,7 @@ name: Daniel Vaughan
 pronoun: He/Him
 position: Cloud Native Software Architect
 company: Mastercard
-location: Cambridge, UK
+location: Cambridge, UK, Europe
 languages:
   - English
 social:

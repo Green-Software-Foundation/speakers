@@ -4,7 +4,7 @@ name: Adam Jordan
 pronoun: He/Him
 position: Distinguished Software Engineer
 company: Shell
-location: Houston, TX, USA
+location: Houston, TX, USA, North America
 languages:
   - English
 social:

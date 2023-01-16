@@ -4,7 +4,7 @@ name: Carlos Pignataro
 pronoun: He/Him
 position: Head of Technology and Data, Engineering Sustainability
 company: Cisco Systems, Inc., NC State University 
-location: North Carolina, USA
+location: North Carolina, USA, North America
 languages:
   - English
   - Spanish

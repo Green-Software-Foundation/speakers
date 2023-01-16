@@ -4,7 +4,7 @@ name: Michelle Thorne
 pronoun: She/Her
 position: Senior Advisor
 company: The Green Web Foundation, Mozilla Foundation
-location: Berlin, Germany
+location: Berlin, Germany, Europe
 languages:
   - English
   - German

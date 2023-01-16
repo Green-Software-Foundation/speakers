@@ -4,7 +4,7 @@ name: Xu Pei
 pronoun: He/Him
 position: Lead Consultant
 company: Thoughtworks
-location: China
+location: China, Asia
 languages:
   - English
 social:

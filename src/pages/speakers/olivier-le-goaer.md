@@ -3,7 +3,7 @@ layout: ../../layouts/SpeakerLayout.astro
 name: "Olivier Le Goaër"
 position: Green Software Advocate
 company: University of Pau
-location: Pau, France
+location: Pau, France, Europe
 languages:
   - English
   - French
