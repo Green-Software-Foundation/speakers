@@ -4,7 +4,7 @@ name: Ismael Velasco
 pronoun: He/Him
 position: Founder
 company: Adora Foundation
-location: Mérida, Mexico
+location: Mérida, Mexico, North America
 languages:
   - English
   - Spanish
