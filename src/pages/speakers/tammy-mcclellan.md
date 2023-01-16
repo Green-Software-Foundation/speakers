@@ -4,7 +4,7 @@ name: Tammy McClellan
 pronoun: She/Her
 position: Sr Cloud Solution Architect - Dev Advocate
 company: Microsoft
-location: Michigan, USA
+location: Michigan, USA, North America
 languages:
   - English
 social:
