@@ -4,7 +4,7 @@ name: Navveen Balani
 pronoun: He/Him
 position: Chief Technologist, Technology Sustainability Innovation (Accenture), Google Cloud Certified Fellow, Co-Lead, SCI Open Data, SCI Open Ontology (GSF)
 company: Accenture
-location: Mumbai, India
+location: Mumbai, India, Asia
 languages:
   - English
 social:
