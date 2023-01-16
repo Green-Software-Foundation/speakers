@@ -4,7 +4,7 @@ name: Davide Bianchi
 pronoun: He/Him
 position: Technical Leader
 company: "Mia-Platform"
-location: Milan, Italy
+location: Milan, Italy, Europe
 languages:
   - English
   - Italian
