@@ -4,7 +4,7 @@ name: Kavitha Sagi
 pronoun: She/Her
 position: Global Sustainability Ecosystem Tech Lead
 company: Accenture
-location: Charlotte, USA
+location: Charlotte, USA, North America
 languages:
   - English
 social:
