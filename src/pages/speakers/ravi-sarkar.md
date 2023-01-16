@@ -4,7 +4,7 @@ name: Ravi Sarkar
 pronoun: He/Him
 position: Enterprise CTO - Technology Strategist Capital Markets - Fintech
 company: Microsoft
-location: New York, USA
+location: New York, USA, North America
 languages:
   - English
 social:
