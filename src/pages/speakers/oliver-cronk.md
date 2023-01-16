@@ -4,7 +4,7 @@ name: Oliver Cronk
 pronoun: He/Him
 position: Technology Director
 company: Scott Logic
-location: London, United Kingdom
+location: London, UK, Europe
 languages:
   - English
 social:
