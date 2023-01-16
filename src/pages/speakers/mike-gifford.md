@@ -4,7 +4,7 @@ name: Mike Gifford
 pronoun: He/Him
 position: Senior Strategist
 company: CivicActions
-location: Ottawa, Canada
+location: Ottawa, Canada, North America
 languages:
   - English
 social:
