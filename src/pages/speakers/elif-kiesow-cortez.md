@@ -4,7 +4,7 @@ name: Elif Kiesow Cortez
 pronoun: She/Her
 position: Researcher
 company: Stanford University
-location: Netherlands
+location: Netherlands, Europe
 languages:
   - English
   - French
