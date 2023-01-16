@@ -4,7 +4,7 @@ name: Owen Rogers
 pronoun: He/Him
 position: Sustainable Technology Coach and Consultant
 company: Exortech Consulting
-location: Vancouver, Canada
+location: Vancouver, Canada, North America
 languages:
   - English
 social:
