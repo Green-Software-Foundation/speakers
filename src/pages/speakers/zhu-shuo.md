@@ -4,7 +4,7 @@ name: Zhu Shuo
 pronoun: He/Him
 position: Social Innovation Expert, Leader of PowerLab
 company: Greenpeace
-location: Beijing, China
+location: Beijing, China, Asia
 languages:
   - English
 social:
