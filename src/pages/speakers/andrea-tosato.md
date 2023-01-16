@@ -4,7 +4,7 @@ name: Andrea Tosato
 pronoun: He/Him
 position: Software Architect
 company: Open Job Metis
-location: Verona, Italy
+location: Verona, Italy, Europe
 languages:
   - English
   - Italian
