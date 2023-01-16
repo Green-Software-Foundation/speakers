@@ -4,7 +4,7 @@ name: Yasumasa Suenaga
 pronoun: He/Him
 position: Technical Lead
 company: NTT DATA
-location: Tokyo, Japan
+location: Tokyo, Japan, Asia
 languages:
   - Japanese
 social:
