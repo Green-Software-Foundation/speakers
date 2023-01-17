@@ -11,7 +11,7 @@ social:
   github: jawache
   linkedin: jawache
   twitter: jawache
-bio: "Asim is a developer, author and speaker with over 20 years experience working for organisations such as the European Space Agency, Google and now Microsoft, where he is the Green Cloud Advocacy Lead. He's also the Executive Director and Chairperson of the Green Software Foundation, a global industry consortium with a mission to create a trusted ecosystem of people, standards, tooling and best practices for building green software."
+bio: "Asim is a developer, author and speaker with over 20 years experience working for organisations such as the European Space Agency, Google and now Microsoft, where he is the Green Cloud Advocacy Lead. He's also the Executive Director and Chairperson of the Green Software Foundation, a global industry consortium with a mission to create a trusted ecosystem of people, standards, tooling and best practices for building green software. He is available for keynote conference appearances."
 experience:
   - Keynotes
 engagements: 50+
