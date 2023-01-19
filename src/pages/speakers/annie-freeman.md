@@ -27,10 +27,6 @@ interests:
   - Sustainability awareness
   - Clean energy
   - Law and technology
-talks:
-  others:
-    - title: About Carlos Pignataro
-      url: https://carlos.pignataro.net/
 travel:
   locations: Willing to travel 
   payAndExpenses: "I'd like to be reimbursed for travel."
