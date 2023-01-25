@@ -29,12 +29,7 @@ interests:
   - Civic Tech
   - Open Data
   - Digital Public Goods
-  - Tech for Good    
-travel:
-  locations: Willing to travel worldwide
-isMAPA: false
-isMinority: true
-coaching: true
+  - Tech for Good 
 talks:
   other:
     - title: "Open Source Policy – Creating value beyond code"
@@ -42,5 +37,10 @@ talks:
     - title: "2022 CIVIC HACKER SUMMIT"
       url: https://civichackersummit.com/schedule/ricardo-miron-2021-summit/
     - title: "Open House with Ricardo Mirón"
-      url: https://twitter.com/publiccodenet/status/1493851060947107844/photo/1
+      url: https://twitter.com/publiccodenet/status/1493851060947107844/photo/1   
+travel:
+  locations: Willing to travel worldwide
+isMAPA: false
+isMinority: true
+coaching: true
 ---
