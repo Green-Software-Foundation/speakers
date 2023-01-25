@@ -42,5 +42,5 @@ talks:
     - title: "2022 CIVIC HACKER SUMMIT"
       url: https://civichackersummit.com/schedule/ricardo-miron-2021-summit/
     - title: "Open House with Ricardo Mirón"
-      url: https://twitter.com/publiccodenet/status/1493851060947107844?s=20&t=We-_evqMNYUkNudAaxpnvw
+      url: https://twitter.com/publiccodenet/status/1493851060947107844/photo/1
 ---
