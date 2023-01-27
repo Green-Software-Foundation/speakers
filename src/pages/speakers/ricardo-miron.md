@@ -31,7 +31,7 @@ interests:
   - Digital Public Goods
   - Tech for Good 
 talks:
-  other:
+  others:
     - title: "Open Source Policy – Creating value beyond code"
       url: https://archive.fosdem.org/2022/schedule/event/open_source_policy/
     - title: "2022 CIVIC HACKER SUMMIT"
