@@ -42,7 +42,7 @@ type Props = MarkdownLayoutProps<{
   notes?: string;
 }>;
 
-const { frontmatter } = Astro.props;
+const { frontmatter, url } = Astro.props;
 const {
   name,
   pronoun,
@@ -65,7 +65,7 @@ const {
 } = frontmatter;
 ---
 
-<Layout>
+<Layout  speaker_bio={bio} speaker_name={name} speaker_slug={url}>
   <div class="wrapper">
     <a class="back-link" href="/"
       ><span

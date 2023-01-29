@@ -4,6 +4,14 @@ import "@fontsource/nunito-sans/600.css";
 import "@fontsource/nunito-sans/700.css";
 import "@fontsource/nunito-sans/800.css";
 import "@fontsource/nunito-sans/900.css";
+
+export interface Props {
+  speaker_name?: string;
+  speaker_bio?: string;
+  speaker_slug?: string;
+}
+
+const { speaker_name, speaker_bio, speaker_slug } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -25,43 +33,69 @@ import "@fontsource/nunito-sans/900.css";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Speakers Bureau | Green Software Foundation</title>
-    <meta name="title" content="Speakers Bureau | Green Software Foundation" />
-    <meta name="description" content="Find a green software speaker." />
+    <title>
+      {speaker_name ? `${speaker_name} | ` : ""}Speakers Bureau | Green Software
+      Foundation
+    </title>
+    <meta
+      name="title"
+      content={`${
+        speaker_name ? `${speaker_name} | ` : ""
+      }Speakers Bureau | Green Software Foundation`}
+    />
+    <meta
+      name="description"
+      content={speaker_bio ? speaker_bio : "Find a green software speaker."}
+    />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://speakers.greensoftware.foundation/"
+      content={`https://speakers.greensoftware.foundation${
+        speaker_slug ? speaker_slug : ""
+      }`}
     />
     <meta
       property="og:title"
-      content="Speakers Bureau | Green Software Foundation"
+      content={`${
+        speaker_name ? `${speaker_name} | ` : ""
+      }Speakers Bureau | Green Software Foundation`}
     />
-    <meta property="og:description" content="Find a green software speaker." />
+    <meta
+      property="og:description"
+      content={speaker_bio ? speaker_bio : "Find a green software speaker."}
+    />
     <meta
       property="og:image"
-      content="https://speakers.greensoftware.foundation/images/og-image.png"
+      content={`https://speakers.greensoftware.foundation${
+        speaker_slug ? `/social${speaker_slug}` : "/social/og-image.png"
+      }`}
     />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:url"
-      content="https://speakers.greensoftware.foundation/"
+      content={`https://speakers.greensoftware.foundation${
+        speaker_slug ? speaker_slug : ""
+      }`}
     />
     <meta
       property="twitter:title"
-      content="Speakers Bureau | Green Software Foundation"
+      content={`${
+        speaker_name ? `${speaker_name} | ` : ""
+      }Speakers Bureau | Green Software Foundation`}
     />
     <meta
       property="twitter:description"
-      content="Find a green software speaker."
+      content={speaker_bio ? speaker_bio : "Find a green software speaker."}
     />
     <meta
       property="twitter:image"
-      content="https://speakers.greensoftware.foundation/images/og-image.png"
+      content={`https://speakers.greensoftware.foundation${
+        speaker_slug ? `/social${speaker_slug}` : "/social/og-image.png"
+      }`}
     />
   </head>
   <body>
