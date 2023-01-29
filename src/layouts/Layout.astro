@@ -69,7 +69,7 @@ const { speaker_name, speaker_bio, speaker_slug } = Astro.props;
     <meta
       property="og:image"
       content={`https://speakers.greensoftware.foundation${
-        speaker_slug ? `/social${speaker_slug}` : "/social/og-image.png"
+        speaker_slug ? `/social${speaker_slug}.png` : "/social/og-image.png"
       }`}
     />
 
@@ -94,7 +94,7 @@ const { speaker_name, speaker_bio, speaker_slug } = Astro.props;
     <meta
       property="twitter:image"
       content={`https://speakers.greensoftware.foundation${
-        speaker_slug ? `/social${speaker_slug}` : "/social/og-image.png"
+        speaker_slug ? `/social${speaker_slug}.png` : "/social/og-image.png"
       }`}
     />
   </head>
