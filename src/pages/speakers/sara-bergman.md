@@ -13,7 +13,7 @@ social:
   github: SaraEmilyBergman
   linkedin: sara-bergman1
   twitter: SaraEBergman
-bio: "Sara is a Software Engineer at Microsoft Development Center Norway working in a team which owns several backend APIs powering People experiences in the Microsoft eco-system. She is an advocate for green software practices at MDCN and M365. She is a member of the Green Software Foundation and a chair of the Writer's project which is curating and creating written articles on the main GSF website and the GSF newsletter. When not working you'll most likely find her hiking or trying to figure out how to grow chilies in sub-zero temperatures."
+bio: "This speaker is not accepting new speaking engagements until Spring 2024 – Sara is a Software Engineer at Microsoft Development Center Norway working in a team which owns several backend APIs powering People experiences in the Microsoft eco-system. She is an advocate for green software practices at MDCN and M365. She is a member of the Green Software Foundation and a chair of the Writer's project which is curating and creating written articles on the main GSF website and the GSF newsletter. When not working you'll most likely find her hiking or trying to figure out how to grow chilies in sub-zero temperatures."
 experience:
   - Meetups
   - Track Talks
