@@ -4,7 +4,7 @@ name: XXX XXX #replace placeholder with full name
 pronoun: He/Him #replace if needed (remove if left blank)
 position: xxx #replace placeholder with position
 company: xxx #replace placeholder with company name
-location: xxx #replace placeholder with [city, country] Note: USA, UK
+location: xxx #replace placeholder with [city, country, continent] Note: USA, UK
 languages: #do not change this line
   - English #add languages on a new line, starting with a dash (-) and a space
 social: #do not change this line
