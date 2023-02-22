@@ -7,7 +7,6 @@ company: GSF
 location: London, UK, Europe
 languages: 
   - English
-  - German
 social: 
   github: githubid
   linkedin: linkedinid
