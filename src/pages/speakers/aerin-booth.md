@@ -34,7 +34,6 @@ talks:
   others:
     - title: "Podcast - Public Cloud for Public Good"
       url: https://open.spotify.com/show/5GAkmHemt7itBVgRu2Fzpr
-talks:
   youtube:
     - title: "Next Generation of Cloud Education - Tools & Techniques for achieving Cloud Sustainability | SOOCon23"
       url: https://youtu.be/56cc3tjjAqk
