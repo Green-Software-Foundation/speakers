@@ -2,7 +2,7 @@
 layout: ../../layouts/SpeakerLayout.astro
 name: Aerin Booth
 pronoun: They/Them
-position: Mx
+position: Founder
 company: Cloud Sustainably
 location: London, UK, Europe
 languages:
