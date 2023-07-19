@@ -2,8 +2,8 @@
 layout: ../../layouts/SpeakerLayout.astro
 name: Bill Johnson
 pronoun: he/him
-position: Principal Engineering Manager
-company: Microsoft
+position: SDM, Worldwide Sustainability
+company: Amazon
 location: Seattle, WA, USA, North America
 languages:
   - English
